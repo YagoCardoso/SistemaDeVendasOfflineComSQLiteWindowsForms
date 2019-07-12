@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace sistemaDeFrotaPim
+{
+    class ValidacaoCampos
+    {
+        //so permitira entrada de letras, espaço,  ctrl
+        public void soletras(KeyPressEventArgs e)
+        {
+            try
+            {
+                if (char.IsLetter(e.KeyChar))
+                {
+                    e.Handled = false;
+
+                }
+                else if (char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (char.IsSeparator(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                    MessageBox.Show("Apenas Letras");
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+
+        }
+
+        //so permitira entrada de numeros, espaço,  ctrl
+        public void sonumeros(KeyPressEventArgs e)
+        {
+            try
+            {
+                if (char.IsNumber(e.KeyChar))
+                {
+                    e.Handled = false;
+
+                }
+                else if (char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else if (char.IsSeparator(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                    MessageBox.Show("Apenas Numeros");
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+
+
+
+
+
+        }
+    }
+}
+
