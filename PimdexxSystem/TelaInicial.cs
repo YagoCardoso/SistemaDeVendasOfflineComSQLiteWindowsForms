@@ -128,7 +128,7 @@ namespace PimdexxSystem
 
         private void btnEntrada_Click(object sender, EventArgs e)
         {
-           
+            AbrirFormInPanel(new Funcionarios());
         }
 
         private void btnSaida_Click(object sender, EventArgs e)

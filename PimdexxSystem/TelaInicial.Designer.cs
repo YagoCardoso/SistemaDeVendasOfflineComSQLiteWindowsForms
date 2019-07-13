@@ -295,9 +295,9 @@
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(4, 428);
+            this.button12.Location = new System.Drawing.Point(5, 428);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(215, 32);
+            this.button12.Size = new System.Drawing.Size(214, 32);
             this.button12.TabIndex = 12;
             this.button12.Text = "Contas á Receber";
             this.button12.UseVisualStyleBackColor = false;
@@ -331,7 +331,7 @@
             this.MenuVertical.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(220, 465);
+            this.MenuVertical.Size = new System.Drawing.Size(218, 465);
             this.MenuVertical.TabIndex = 1;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
@@ -368,9 +368,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(2, 126);
+            this.button2.Location = new System.Drawing.Point(4, 126);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 32);
+            this.button2.Size = new System.Drawing.Size(215, 32);
             this.button2.TabIndex = 2;
             this.button2.Text = "Categorias";
             this.button2.UseVisualStyleBackColor = false;
@@ -473,9 +473,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(73, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(93, 21);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(634, 266);
+            this.pictureBox3.Size = new System.Drawing.Size(514, 190);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;

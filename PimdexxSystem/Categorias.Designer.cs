@@ -50,7 +50,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(49, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(853, 288);
+            this.dataGridView1.Size = new System.Drawing.Size(642, 288);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -151,7 +151,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(459, 115);
+            this.button4.Location = new System.Drawing.Point(553, 115);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(138, 39);
             this.button4.TabIndex = 136;
