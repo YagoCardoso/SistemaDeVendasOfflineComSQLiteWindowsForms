@@ -54,6 +54,18 @@
     <Compile Include="Categorias.Designer.cs">
       <DependentUpon>Categorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProdutos.Designer.cs">
+      <DependentUpon>ConsultarProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </Compile>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProdutos.resx">
+      <DependentUpon>ConsultarProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>

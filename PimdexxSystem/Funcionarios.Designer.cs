@@ -45,7 +45,6 @@
             this.txt_Fone = new System.Windows.Forms.TextBox();
             this.txt_Salario = new System.Windows.Forms.TextBox();
             this.txt_dtadmissao = new System.Windows.Forms.TextBox();
-            this.cbox_TipoUsu = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@
             this.txt_dtNascimento = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txt_desligamento = new System.Windows.Forms.TextBox();
+            this.cbox_TipoUsu = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -242,18 +242,6 @@
             this.txt_dtadmissao.Name = "txt_dtadmissao";
             this.txt_dtadmissao.Size = new System.Drawing.Size(156, 20);
             this.txt_dtadmissao.TabIndex = 155;
-            // 
-            // cbox_TipoUsu
-            // 
-            this.cbox_TipoUsu.FormattingEnabled = true;
-            this.cbox_TipoUsu.Items.AddRange(new object[] {
-            "Administrador",
-            "Funcionário"});
-            this.cbox_TipoUsu.Location = new System.Drawing.Point(265, 264);
-            this.cbox_TipoUsu.Name = "cbox_TipoUsu";
-            this.cbox_TipoUsu.Size = new System.Drawing.Size(161, 21);
-            this.cbox_TipoUsu.TabIndex = 156;
-            this.cbox_TipoUsu.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -483,12 +471,24 @@
             this.txt_desligamento.Size = new System.Drawing.Size(156, 20);
             this.txt_desligamento.TabIndex = 176;
             // 
+            // cbox_TipoUsu
+            // 
+            this.cbox_TipoUsu.FormattingEnabled = true;
+            this.cbox_TipoUsu.Items.AddRange(new object[] {
+            "Administrador",
+            "Funcionario"});
+            this.cbox_TipoUsu.Location = new System.Drawing.Point(265, 267);
+            this.cbox_TipoUsu.Name = "cbox_TipoUsu";
+            this.cbox_TipoUsu.Size = new System.Drawing.Size(139, 21);
+            this.cbox_TipoUsu.TabIndex = 178;
+            // 
             // Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.cbox_TipoUsu);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txt_desligamento);
             this.Controls.Add(this.label17);
@@ -511,7 +511,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbox_TipoUsu);
             this.Controls.Add(this.txt_dtadmissao);
             this.Controls.Add(this.txt_Salario);
             this.Controls.Add(this.txt_Fone);
@@ -559,7 +558,6 @@
         private System.Windows.Forms.TextBox txt_Fone;
         private System.Windows.Forms.TextBox txt_Salario;
         private System.Windows.Forms.TextBox txt_dtadmissao;
-        private System.Windows.Forms.ComboBox cbox_TipoUsu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -584,5 +582,6 @@
         private System.Windows.Forms.TextBox txt_dtNascimento;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_desligamento;
+        private System.Windows.Forms.ComboBox cbox_TipoUsu;
     }
 }

@@ -138,7 +138,7 @@ namespace PimdexxSystem
 
         private void btnMotorista_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormInPanel(new Clientes());
         }
 
         private void btnSeguros_Click(object sender, EventArgs e)
@@ -252,6 +252,11 @@ namespace PimdexxSystem
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPecas_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new ConsultarProdutos());
         }
     }
 }

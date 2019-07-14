@@ -83,7 +83,7 @@ namespace PimdexxSystem
 
         private void Veiculos_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text == "master" && txtSenha.Text == "@1020")
+            if (txtLogin.Text == "10" && txtSenha.Text == "10")
             {
                 this.Close();
                 //campo nt foi gerado no começo da classe

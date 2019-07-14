@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.btnVeiculos = new System.Windows.Forms.Button();
+            this.btn_produtos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSeguros = new System.Windows.Forms.Button();
-            this.btnMotorista = new System.Windows.Forms.Button();
-            this.btnPecas = new System.Windows.Forms.Button();
-            this.btnEntrada = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_vendas = new System.Windows.Forms.Button();
+            this.btn_clientes = new System.Windows.Forms.Button();
+            this.btn_visualizar_produtos = new System.Windows.Forms.Button();
+            this.btn_funcionarios = new System.Windows.Forms.Button();
+            this.btn_relatorio = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_efetuar_vendas = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.painelPrincipal = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btn_contasReceber = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_categorias = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -71,25 +71,25 @@
             this.painel_TelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnVeiculos
+            // btn_produtos
             // 
-            this.btnVeiculos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnVeiculos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVeiculos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnVeiculos.FlatAppearance.BorderSize = 0;
-            this.btnVeiculos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnVeiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVeiculos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVeiculos.ForeColor = System.Drawing.Color.White;
-            this.btnVeiculos.Image = ((System.Drawing.Image)(resources.GetObject("btnVeiculos.Image")));
-            this.btnVeiculos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVeiculos.Location = new System.Drawing.Point(3, 162);
-            this.btnVeiculos.Name = "btnVeiculos";
-            this.btnVeiculos.Size = new System.Drawing.Size(217, 32);
-            this.btnVeiculos.TabIndex = 0;
-            this.btnVeiculos.Text = "Produtos";
-            this.btnVeiculos.UseVisualStyleBackColor = false;
-            this.btnVeiculos.Click += new System.EventHandler(this.button1_Click);
+            this.btn_produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_produtos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_produtos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_produtos.FlatAppearance.BorderSize = 0;
+            this.btn_produtos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_produtos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_produtos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_produtos.ForeColor = System.Drawing.Color.White;
+            this.btn_produtos.Image = ((System.Drawing.Image)(resources.GetObject("btn_produtos.Image")));
+            this.btn_produtos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_produtos.Location = new System.Drawing.Point(3, 162);
+            this.btn_produtos.Name = "btn_produtos";
+            this.btn_produtos.Size = new System.Drawing.Size(217, 32);
+            this.btn_produtos.TabIndex = 0;
+            this.btn_produtos.Text = "Produtos";
+            this.btn_produtos.UseVisualStyleBackColor = false;
+            this.btn_produtos.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -100,99 +100,100 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnSeguros
+            // btn_vendas
             // 
-            this.btnSeguros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnSeguros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSeguros.FlatAppearance.BorderSize = 0;
-            this.btnSeguros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSeguros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeguros.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeguros.ForeColor = System.Drawing.Color.White;
-            this.btnSeguros.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguros.Image")));
-            this.btnSeguros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguros.Location = new System.Drawing.Point(3, 200);
-            this.btnSeguros.Name = "btnSeguros";
-            this.btnSeguros.Size = new System.Drawing.Size(217, 32);
-            this.btnSeguros.TabIndex = 1;
-            this.btnSeguros.Text = "Consultar Vendas";
-            this.btnSeguros.UseVisualStyleBackColor = false;
-            this.btnSeguros.Click += new System.EventHandler(this.btnSeguros_Click);
+            this.btn_vendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_vendas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_vendas.FlatAppearance.BorderSize = 0;
+            this.btn_vendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_vendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_vendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vendas.ForeColor = System.Drawing.Color.White;
+            this.btn_vendas.Image = ((System.Drawing.Image)(resources.GetObject("btn_vendas.Image")));
+            this.btn_vendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_vendas.Location = new System.Drawing.Point(3, 200);
+            this.btn_vendas.Name = "btn_vendas";
+            this.btn_vendas.Size = new System.Drawing.Size(217, 32);
+            this.btn_vendas.TabIndex = 1;
+            this.btn_vendas.Text = "Vendas";
+            this.btn_vendas.UseVisualStyleBackColor = false;
+            this.btn_vendas.Click += new System.EventHandler(this.btnSeguros_Click);
             // 
-            // btnMotorista
+            // btn_clientes
             // 
-            this.btnMotorista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnMotorista.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMotorista.FlatAppearance.BorderSize = 0;
-            this.btnMotorista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMotorista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMotorista.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMotorista.ForeColor = System.Drawing.Color.White;
-            this.btnMotorista.Image = ((System.Drawing.Image)(resources.GetObject("btnMotorista.Image")));
-            this.btnMotorista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMotorista.Location = new System.Drawing.Point(3, 238);
-            this.btnMotorista.Name = "btnMotorista";
-            this.btnMotorista.Size = new System.Drawing.Size(217, 32);
-            this.btnMotorista.TabIndex = 2;
-            this.btnMotorista.Text = "Clientes";
-            this.btnMotorista.UseVisualStyleBackColor = false;
-            this.btnMotorista.Click += new System.EventHandler(this.btnMotorista_Click);
+            this.btn_clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_clientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_clientes.FlatAppearance.BorderSize = 0;
+            this.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clientes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clientes.ForeColor = System.Drawing.Color.White;
+            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
+            this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_clientes.Location = new System.Drawing.Point(3, 238);
+            this.btn_clientes.Name = "btn_clientes";
+            this.btn_clientes.Size = new System.Drawing.Size(217, 32);
+            this.btn_clientes.TabIndex = 2;
+            this.btn_clientes.Text = "Clientes";
+            this.btn_clientes.UseVisualStyleBackColor = false;
+            this.btn_clientes.Click += new System.EventHandler(this.btnMotorista_Click);
             // 
-            // btnPecas
+            // btn_visualizar_produtos
             // 
-            this.btnPecas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnPecas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPecas.FlatAppearance.BorderSize = 0;
-            this.btnPecas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnPecas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPecas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPecas.ForeColor = System.Drawing.Color.White;
-            this.btnPecas.Image = ((System.Drawing.Image)(resources.GetObject("btnPecas.Image")));
-            this.btnPecas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPecas.Location = new System.Drawing.Point(3, 352);
-            this.btnPecas.Name = "btnPecas";
-            this.btnPecas.Size = new System.Drawing.Size(217, 32);
-            this.btnPecas.TabIndex = 6;
-            this.btnPecas.Text = "Consultar Produtos";
-            this.btnPecas.UseVisualStyleBackColor = false;
+            this.btn_visualizar_produtos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_visualizar_produtos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_visualizar_produtos.FlatAppearance.BorderSize = 0;
+            this.btn_visualizar_produtos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_visualizar_produtos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_visualizar_produtos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_visualizar_produtos.ForeColor = System.Drawing.Color.White;
+            this.btn_visualizar_produtos.Image = ((System.Drawing.Image)(resources.GetObject("btn_visualizar_produtos.Image")));
+            this.btn_visualizar_produtos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_visualizar_produtos.Location = new System.Drawing.Point(3, 352);
+            this.btn_visualizar_produtos.Name = "btn_visualizar_produtos";
+            this.btn_visualizar_produtos.Size = new System.Drawing.Size(217, 32);
+            this.btn_visualizar_produtos.TabIndex = 6;
+            this.btn_visualizar_produtos.Text = "Visualizar Produtos";
+            this.btn_visualizar_produtos.UseVisualStyleBackColor = false;
+            this.btn_visualizar_produtos.Click += new System.EventHandler(this.btnPecas_Click);
             // 
-            // btnEntrada
+            // btn_funcionarios
             // 
-            this.btnEntrada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnEntrada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrada.FlatAppearance.BorderSize = 0;
-            this.btnEntrada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrada.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrada.ForeColor = System.Drawing.Color.White;
-            this.btnEntrada.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrada.Image")));
-            this.btnEntrada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrada.Location = new System.Drawing.Point(3, 276);
-            this.btnEntrada.Name = "btnEntrada";
-            this.btnEntrada.Size = new System.Drawing.Size(217, 32);
-            this.btnEntrada.TabIndex = 3;
-            this.btnEntrada.Text = "Funcionarios";
-            this.btnEntrada.UseVisualStyleBackColor = false;
-            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
+            this.btn_funcionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_funcionarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_funcionarios.FlatAppearance.BorderSize = 0;
+            this.btn_funcionarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_funcionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_funcionarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_funcionarios.ForeColor = System.Drawing.Color.White;
+            this.btn_funcionarios.Image = ((System.Drawing.Image)(resources.GetObject("btn_funcionarios.Image")));
+            this.btn_funcionarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_funcionarios.Location = new System.Drawing.Point(3, 276);
+            this.btn_funcionarios.Name = "btn_funcionarios";
+            this.btn_funcionarios.Size = new System.Drawing.Size(217, 32);
+            this.btn_funcionarios.TabIndex = 3;
+            this.btn_funcionarios.Text = "Funcionarios";
+            this.btn_funcionarios.UseVisualStyleBackColor = false;
+            this.btn_funcionarios.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
-            // button4
+            // btn_relatorio
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 314);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 32);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "     Relatórios de Produtos";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_relatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_relatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_relatorio.FlatAppearance.BorderSize = 0;
+            this.btn_relatorio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_relatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_relatorio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_relatorio.ForeColor = System.Drawing.Color.White;
+            this.btn_relatorio.Image = ((System.Drawing.Image)(resources.GetObject("btn_relatorio.Image")));
+            this.btn_relatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_relatorio.Location = new System.Drawing.Point(3, 314);
+            this.btn_relatorio.Name = "btn_relatorio";
+            this.btn_relatorio.Size = new System.Drawing.Size(217, 32);
+            this.btn_relatorio.TabIndex = 10;
+            this.btn_relatorio.Text = "     Relatórios de Produtos";
+            this.btn_relatorio.UseVisualStyleBackColor = false;
+            this.btn_relatorio.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel9
             // 
@@ -230,24 +231,24 @@
             this.panel7.TabIndex = 1;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // button1
+            // btn_efetuar_vendas
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Efetuar Venda";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_efetuar_vendas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_efetuar_vendas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_efetuar_vendas.FlatAppearance.BorderSize = 0;
+            this.btn_efetuar_vendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_efetuar_vendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_efetuar_vendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_efetuar_vendas.ForeColor = System.Drawing.Color.White;
+            this.btn_efetuar_vendas.Image = ((System.Drawing.Image)(resources.GetObject("btn_efetuar_vendas.Image")));
+            this.btn_efetuar_vendas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_efetuar_vendas.Location = new System.Drawing.Point(5, 390);
+            this.btn_efetuar_vendas.Name = "btn_efetuar_vendas";
+            this.btn_efetuar_vendas.Size = new System.Drawing.Size(217, 32);
+            this.btn_efetuar_vendas.TabIndex = 7;
+            this.btn_efetuar_vendas.Text = "Efetuar Venda";
+            this.btn_efetuar_vendas.UseVisualStyleBackColor = false;
+            this.btn_efetuar_vendas.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel5
             // 
@@ -284,49 +285,49 @@
             this.panel2.TabIndex = 11;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button12
+            // btn_contasReceber
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(5, 428);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(214, 32);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "Contas á Receber";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.btn_contasReceber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_contasReceber.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_contasReceber.FlatAppearance.BorderSize = 0;
+            this.btn_contasReceber.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_contasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_contasReceber.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_contasReceber.ForeColor = System.Drawing.Color.White;
+            this.btn_contasReceber.Image = ((System.Drawing.Image)(resources.GetObject("btn_contasReceber.Image")));
+            this.btn_contasReceber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_contasReceber.Location = new System.Drawing.Point(5, 428);
+            this.btn_contasReceber.Name = "btn_contasReceber";
+            this.btn_contasReceber.Size = new System.Drawing.Size(214, 32);
+            this.btn_contasReceber.TabIndex = 12;
+            this.btn_contasReceber.Text = "Contas á Receber";
+            this.btn_contasReceber.UseVisualStyleBackColor = false;
+            this.btn_contasReceber.Click += new System.EventHandler(this.button12_Click);
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.MenuVertical.Controls.Add(this.panel11);
             this.MenuVertical.Controls.Add(this.label1);
-            this.MenuVertical.Controls.Add(this.button2);
+            this.MenuVertical.Controls.Add(this.btn_categorias);
             this.MenuVertical.Controls.Add(this.pictureBox2);
-            this.MenuVertical.Controls.Add(this.button12);
+            this.MenuVertical.Controls.Add(this.btn_contasReceber);
             this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.painelPrincipal);
             this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.panel5);
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.btn_efetuar_vendas);
             this.MenuVertical.Controls.Add(this.panel7);
             this.MenuVertical.Controls.Add(this.panel10);
             this.MenuVertical.Controls.Add(this.panel8);
             this.MenuVertical.Controls.Add(this.panel9);
-            this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.btnEntrada);
-            this.MenuVertical.Controls.Add(this.btnPecas);
-            this.MenuVertical.Controls.Add(this.btnMotorista);
-            this.MenuVertical.Controls.Add(this.btnSeguros);
+            this.MenuVertical.Controls.Add(this.btn_relatorio);
+            this.MenuVertical.Controls.Add(this.btn_funcionarios);
+            this.MenuVertical.Controls.Add(this.btn_visualizar_produtos);
+            this.MenuVertical.Controls.Add(this.btn_clientes);
+            this.MenuVertical.Controls.Add(this.btn_vendas);
             this.MenuVertical.Controls.Add(this.panel1);
-            this.MenuVertical.Controls.Add(this.btnVeiculos);
+            this.MenuVertical.Controls.Add(this.btn_produtos);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
@@ -356,25 +357,25 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "Gerenciamento de Vendas";
             // 
-            // button2
+            // btn_categorias
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(4, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Categorias";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_categorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_categorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_categorias.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_categorias.FlatAppearance.BorderSize = 0;
+            this.btn_categorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_categorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_categorias.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_categorias.ForeColor = System.Drawing.Color.White;
+            this.btn_categorias.Image = ((System.Drawing.Image)(resources.GetObject("btn_categorias.Image")));
+            this.btn_categorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_categorias.Location = new System.Drawing.Point(4, 126);
+            this.btn_categorias.Name = "btn_categorias";
+            this.btn_categorias.Size = new System.Drawing.Size(215, 32);
+            this.btn_categorias.TabIndex = 2;
+            this.btn_categorias.Text = "Categorias";
+            this.btn_categorias.UseVisualStyleBackColor = false;
+            this.btn_categorias.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
@@ -518,23 +519,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnVeiculos;
+        private System.Windows.Forms.Button btn_produtos;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSeguros;
-        private System.Windows.Forms.Button btnMotorista;
-        private System.Windows.Forms.Button btnPecas;
-        private System.Windows.Forms.Button btnEntrada;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_vendas;
+        private System.Windows.Forms.Button btn_clientes;
+        private System.Windows.Forms.Button btn_visualizar_produtos;
+        private System.Windows.Forms.Button btn_funcionarios;
+        private System.Windows.Forms.Button btn_relatorio;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_efetuar_vendas;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel painelPrincipal;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btn_contasReceber;
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.PictureBox btnFechar;
         private System.Windows.Forms.PictureBox btnMinimizar;
@@ -546,7 +547,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_categorias;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel painel_TelaInicial;
     }
