@@ -237,6 +237,11 @@ namespace PimdexxSystem
             }
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para pesquisar, digite o código do produto no campo código e clique em pesquisar , para  Alterar ou Excluir, Poderá localizar o código em Consultar Produtos", "INFORMAÇÔES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 
 }

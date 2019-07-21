@@ -66,6 +66,12 @@
     <Compile Include="ConsultarProdutos.Designer.cs">
       <DependentUpon>ConsultarProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="EfetuarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EfetuarVendas.Designer.cs">
+      <DependentUpon>EfetuarVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SystemOrangeDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SystemOrangeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarProdutos.resx">
       <DependentUpon>ConsultarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EfetuarVendas.resx">
+      <DependentUpon>EfetuarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Funcionarios.resx">
       <DependentUpon>Funcionarios.cs</DependentUpon>
@@ -181,6 +195,17 @@
     </None>
     <None Include="SystemOrangeDataSet2.xss">
       <DependentUpon>SystemOrangeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet3.xsc">
+      <DependentUpon>SystemOrangeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet3.xss">
+      <DependentUpon>SystemOrangeDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
