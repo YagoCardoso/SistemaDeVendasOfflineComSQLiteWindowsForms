@@ -16,5 +16,12 @@ namespace PimdexxSystem
         {
             InitializeComponent();
         }
+
+        private void ConsultarProdutos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'systemOrangeDataSet2.PRODUTO'. Você pode movê-la ou removê-la conforme necessário.
+            this.pRODUTOTableAdapter.Fill(this.systemOrangeDataSet2.PRODUTO);
+
+        }
     }
 }

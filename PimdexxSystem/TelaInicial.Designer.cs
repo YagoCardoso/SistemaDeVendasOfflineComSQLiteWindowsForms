@@ -483,11 +483,11 @@
             // 
             // painel_TelaInicial
             // 
-            this.painel_TelaInicial.BackColor = System.Drawing.Color.White;
+            this.painel_TelaInicial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.painel_TelaInicial.Controls.Add(this.pictureBox3);
-            this.painel_TelaInicial.Location = new System.Drawing.Point(218, 35);
+            this.painel_TelaInicial.Location = new System.Drawing.Point(219, 35);
             this.painel_TelaInicial.Name = "painel_TelaInicial";
-            this.painel_TelaInicial.Size = new System.Drawing.Size(781, 465);
+            this.painel_TelaInicial.Size = new System.Drawing.Size(782, 465);
             this.painel_TelaInicial.TabIndex = 29;
             this.painel_TelaInicial.Paint += new System.Windows.Forms.PaintEventHandler(this.painel_TelaInicial_Paint);
             // 
@@ -495,7 +495,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.painel_TelaInicial);

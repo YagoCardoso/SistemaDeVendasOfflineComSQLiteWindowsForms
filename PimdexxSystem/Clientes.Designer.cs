@@ -339,6 +339,7 @@
             this.button1.Text = "Salvar Novo";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Clientes
             // 

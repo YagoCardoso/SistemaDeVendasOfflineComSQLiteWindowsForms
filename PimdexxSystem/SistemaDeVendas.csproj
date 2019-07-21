@@ -78,6 +78,21 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="SystemOrangeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +149,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SystemOrangeDataSet.xsc">
+      <DependentUpon>SystemOrangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet.xss">
+      <DependentUpon>SystemOrangeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet1.xsc">
+      <DependentUpon>SystemOrangeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet1.xss">
+      <DependentUpon>SystemOrangeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet2.xsc">
+      <DependentUpon>SystemOrangeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet2.xss">
+      <DependentUpon>SystemOrangeDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

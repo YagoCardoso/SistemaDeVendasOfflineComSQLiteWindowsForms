@@ -33,5 +33,16 @@ namespace PimdexxSystem.Properties {
                 return ((string)(this["PDBASEConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-PIKVREV\\SQLEXPRESS;Initial Catalog=SystemOrange;Integrated Se" +
+            "curity=True")]
+        public string SystemOrangeConnectionString {
+            get {
+                return ((string)(this["SystemOrangeConnectionString"]));
+            }
+        }
     }
 }

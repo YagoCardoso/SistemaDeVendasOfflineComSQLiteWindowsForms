@@ -28,19 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.systemOrangeDataSet2 = new PimdexxSystem.SystemOrangeDataSet2();
+            this.pRODUTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRODUTOTableAdapter = new PimdexxSystem.SystemOrangeDataSet2TableAdapters.PRODUTOTableAdapter();
+            this.sEQPRODUTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vALORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cATEGORIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRODUTOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 32);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sEQPRODUTODataGridViewTextBoxColumn,
+            this.dESCRICAODataGridViewTextBoxColumn,
+            this.vALORDataGridViewTextBoxColumn,
+            this.cATEGORIADataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.pRODUTOBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(32, 40);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(788, 412);
+            this.dataGridView1.Size = new System.Drawing.Size(440, 398);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Visualização de Produtos";
+            // 
+            // systemOrangeDataSet2
+            // 
+            this.systemOrangeDataSet2.DataSetName = "SystemOrangeDataSet2";
+            this.systemOrangeDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pRODUTOBindingSource
+            // 
+            this.pRODUTOBindingSource.DataMember = "PRODUTO";
+            this.pRODUTOBindingSource.DataSource = this.systemOrangeDataSet2;
+            // 
+            // pRODUTOTableAdapter
+            // 
+            this.pRODUTOTableAdapter.ClearBeforeFill = true;
+            // 
+            // sEQPRODUTODataGridViewTextBoxColumn
+            // 
+            this.sEQPRODUTODataGridViewTextBoxColumn.DataPropertyName = "SEQPRODUTO";
+            this.sEQPRODUTODataGridViewTextBoxColumn.HeaderText = "Código do Produto";
+            this.sEQPRODUTODataGridViewTextBoxColumn.Name = "sEQPRODUTODataGridViewTextBoxColumn";
+            // 
+            // dESCRICAODataGridViewTextBoxColumn
+            // 
+            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "Produto";
+            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
+            // 
+            // vALORDataGridViewTextBoxColumn
+            // 
+            this.vALORDataGridViewTextBoxColumn.DataPropertyName = "VALOR";
+            this.vALORDataGridViewTextBoxColumn.HeaderText = "R$ Valor";
+            this.vALORDataGridViewTextBoxColumn.Name = "vALORDataGridViewTextBoxColumn";
+            // 
+            // cATEGORIADataGridViewTextBoxColumn
+            // 
+            this.cATEGORIADataGridViewTextBoxColumn.DataPropertyName = "CATEGORIA";
+            this.cATEGORIADataGridViewTextBoxColumn.HeaderText = "Categoria";
+            this.cATEGORIADataGridViewTextBoxColumn.Name = "cATEGORIADataGridViewTextBoxColumn";
             // 
             // ConsultarProdutos
             // 
@@ -48,17 +114,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarProdutos";
             this.Text = "ConsultarProdutos";
+            this.Load += new System.EventHandler(this.ConsultarProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRODUTOBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private SystemOrangeDataSet2 systemOrangeDataSet2;
+        private System.Windows.Forms.BindingSource pRODUTOBindingSource;
+        private SystemOrangeDataSet2TableAdapters.PRODUTOTableAdapter pRODUTOTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sEQPRODUTODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vALORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORIADataGridViewTextBoxColumn;
     }
 }
