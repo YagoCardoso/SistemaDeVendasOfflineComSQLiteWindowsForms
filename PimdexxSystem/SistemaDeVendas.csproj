@@ -72,11 +72,22 @@
     <Compile Include="EfetuarVendas.Designer.cs">
       <DependentUpon>EfetuarVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Funcionarios.cs">
+    <Compile Include="Relatorios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Funcionarios.Designer.cs">
-      <DependentUpon>Funcionarios.cs</DependentUpon>
+    <Compile Include="Relatorios.Designer.cs">
+      <DependentUpon>Relatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -133,8 +144,11 @@
     <EmbeddedResource Include="EfetuarVendas.resx">
       <DependentUpon>EfetuarVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Funcionarios.resx">
-      <DependentUpon>Funcionarios.cs</DependentUpon>
+    <EmbeddedResource Include="Relatorios.resx">
+      <DependentUpon>Relatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -206,6 +220,17 @@
     </None>
     <None Include="SystemOrangeDataSet3.xss">
       <DependentUpon>SystemOrangeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet4.xsc">
+      <DependentUpon>SystemOrangeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet4.xss">
+      <DependentUpon>SystemOrangeDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -128,7 +128,7 @@ namespace PimdexxSystem
 
         private void btnEntrada_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Funcionarios());
+            AbrirFormInPanel(new Usuarios());
         }
 
         private void btnSaida_Click(object sender, EventArgs e)
@@ -148,7 +148,7 @@ namespace PimdexxSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormInPanel(new Relatorios());
         }
 
         private void button5_Click(object sender, EventArgs e)

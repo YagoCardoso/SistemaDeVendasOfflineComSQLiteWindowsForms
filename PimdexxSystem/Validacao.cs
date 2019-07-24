@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace sistemaDeFrotaPim
+namespace validaocampos
 {
     public class Validacao : TextBox
     {
@@ -29,7 +29,7 @@ namespace sistemaDeFrotaPim
         {
             base.OnGotFocus(e);
             this.SelectAll();
-            this.BackColor = Color.Red;
+            this.BackColor = Color.OrangeRed;
         }
         //quando perder o foco ira voltar a ser branco
         protected override void OnLostFocus(EventArgs e)
@@ -56,7 +56,7 @@ namespace sistemaDeFrotaPim
             if (!char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Apenas numeros");
+                MessageBox.Show("Apenas números");
             }
         }
 

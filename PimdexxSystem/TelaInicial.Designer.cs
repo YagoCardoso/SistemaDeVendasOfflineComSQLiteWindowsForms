@@ -172,7 +172,7 @@
             this.btn_funcionarios.Name = "btn_funcionarios";
             this.btn_funcionarios.Size = new System.Drawing.Size(217, 32);
             this.btn_funcionarios.TabIndex = 3;
-            this.btn_funcionarios.Text = "Funcionarios";
+            this.btn_funcionarios.Text = "Usuários";
             this.btn_funcionarios.UseVisualStyleBackColor = false;
             this.btn_funcionarios.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
@@ -191,7 +191,7 @@
             this.btn_relatorio.Name = "btn_relatorio";
             this.btn_relatorio.Size = new System.Drawing.Size(217, 32);
             this.btn_relatorio.TabIndex = 10;
-            this.btn_relatorio.Text = "     Relatórios de Produtos";
+            this.btn_relatorio.Text = "     Relatórios ";
             this.btn_relatorio.UseVisualStyleBackColor = false;
             this.btn_relatorio.Click += new System.EventHandler(this.button4_Click);
             // 

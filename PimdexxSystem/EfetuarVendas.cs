@@ -57,5 +57,15 @@ namespace PimdexxSystem
                 sql.Close();
             }
         }
+
+        private void txt_categoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
