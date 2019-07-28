@@ -55,8 +55,11 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_dtNascimento = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txt_CPF = new validaocampos.Validacao();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label17
@@ -336,6 +339,27 @@
             this.txt_dtNascimento.Size = new System.Drawing.Size(228, 20);
             this.txt_dtNascimento.TabIndex = 210;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(592, 354);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 212;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(589, 337);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(156, 14);
+            this.label9.TabIndex = 213;
+            this.label9.Text = "Ver Clientes Cadastrados";
+            // 
             // txt_CPF
             // 
             this.txt_CPF.Location = new System.Drawing.Point(265, 264);
@@ -350,6 +374,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_CPF);
             this.Controls.Add(this.txt_dtNascimento);
             this.Controls.Add(this.button1);
@@ -381,6 +407,7 @@
             this.Text = "Clientes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +441,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker txt_dtNascimento;
         private validaocampos.Validacao txt_CPF;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
     }
 }

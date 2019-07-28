@@ -238,5 +238,12 @@ namespace PimdexxSystem
         {
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ListaClientes f = new ListaClientes();
+
+            f.Show();
+        }
     }
 }
