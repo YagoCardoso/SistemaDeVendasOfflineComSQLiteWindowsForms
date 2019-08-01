@@ -81,6 +81,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(209, 27);
             this.txtLogin.TabIndex = 5;
+            this.txtLogin.TextChanged += new System.EventHandler(this.txtLogin_TextChanged);
             // 
             // BarraTitulo
             // 

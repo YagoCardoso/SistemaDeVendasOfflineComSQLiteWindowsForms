@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 
 namespace PimdexxSystem
 {
+    
     public partial class Login : Form
     {
         private Thread nt;
@@ -80,6 +81,9 @@ namespace PimdexxSystem
                 Application.Exit();
             }
         }
+        
+
+         
 
         private void Veiculos_Click(object sender, EventArgs e)
         {
@@ -139,5 +143,12 @@ namespace PimdexxSystem
                 MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
     }
 }

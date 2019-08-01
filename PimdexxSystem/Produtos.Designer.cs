@@ -46,12 +46,9 @@
             this.cATEGORIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.systemOrangeDataSet1 = new PimdexxSystem.SystemOrangeDataSet1();
             this.cATEGORIATableAdapter = new PimdexxSystem.SystemOrangeDataSet1TableAdapters.CATEGORIATableAdapter();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cATEGORIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet1)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +62,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(56, 34);
+            this.button4.Location = new System.Drawing.Point(53, 10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(144, 51);
             this.button4.TabIndex = 137;
@@ -83,7 +80,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(209, 34);
+            this.button6.Location = new System.Drawing.Point(206, 10);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(144, 51);
             this.button6.TabIndex = 136;
@@ -102,7 +99,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(364, 34);
+            this.button7.Location = new System.Drawing.Point(361, 10);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(144, 51);
             this.button7.TabIndex = 135;
@@ -120,7 +117,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(519, 34);
+            this.button8.Location = new System.Drawing.Point(516, 10);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(144, 51);
             this.button8.TabIndex = 134;
@@ -210,7 +207,6 @@
             // 
             // txt_categoria
             // 
-            this.txt_categoria.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cATEGORIABindingSource, "DESCRICAO", true));
             this.txt_categoria.DataSource = this.cATEGORIABindingSource;
             this.txt_categoria.DisplayMember = "DESCRICAO";
             this.txt_categoria.FormattingEnabled = true;
@@ -218,7 +214,6 @@
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(121, 21);
             this.txt_categoria.TabIndex = 184;
-            this.txt_categoria.ValueMember = "DESCRICAO";
             // 
             // cATEGORIABindingSource
             // 
@@ -234,29 +229,10 @@
             // 
             this.cATEGORIATableAdapter.ClearBeforeFill = true;
             // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1000, 25);
-            this.fillByToolStrip.TabIndex = 185;
-            this.fillByToolStrip.Text = "atualizar categorias";
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(116, 22);
-            this.fillByToolStripButton.Text = "Atualizar Categorias";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -271,7 +247,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.txt_categoria);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -292,8 +267,6 @@
             this.Load += new System.EventHandler(this.Veiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cATEGORIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet1)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -323,8 +296,6 @@
         private SystemOrangeDataSet1 systemOrangeDataSet1;
         private System.Windows.Forms.BindingSource cATEGORIABindingSource;
         private SystemOrangeDataSet1TableAdapters.CATEGORIATableAdapter cATEGORIATableAdapter;
-        private System.Windows.Forms.ToolStrip fillByToolStrip;
-        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

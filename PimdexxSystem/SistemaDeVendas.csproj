@@ -66,6 +66,12 @@
     <Compile Include="ConsultarProdutos.Designer.cs">
       <DependentUpon>ConsultarProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVendas.Designer.cs">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="EfetuarVendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SystemOrangeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SystemOrangeDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemOrangeDataSet8.xsd</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
@@ -157,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarProdutos.resx">
       <DependentUpon>ConsultarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVendas.resx">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EfetuarVendas.resx">
       <DependentUpon>EfetuarVendas.cs</DependentUpon>
@@ -265,6 +289,39 @@
     </None>
     <None Include="SystemOrangeDataSet5.xss">
       <DependentUpon>SystemOrangeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet6.xsc">
+      <DependentUpon>SystemOrangeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet6.xss">
+      <DependentUpon>SystemOrangeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet7.xsc">
+      <DependentUpon>SystemOrangeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet7.xss">
+      <DependentUpon>SystemOrangeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet8.xsc">
+      <DependentUpon>SystemOrangeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SystemOrangeDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SystemOrangeDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SystemOrangeDataSet8.xss">
+      <DependentUpon>SystemOrangeDataSet8.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

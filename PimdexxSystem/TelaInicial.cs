@@ -76,7 +76,7 @@ namespace PimdexxSystem
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
         //codigo abaixo e para autorizar a mover as janelas
 
@@ -143,7 +143,7 @@ namespace PimdexxSystem
 
         private void btnSeguros_Click(object sender, EventArgs e)
         {
-           
+            AbrirFormInPanel(new ConsultarVendas());
         }
 
         private void button4_Click(object sender, EventArgs e)
