@@ -33,23 +33,26 @@
             this.cATEGORIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.systemOrangeDataSet = new PimdexxSystem.SystemOrangeDataSet();
             this.cATEGORIATableAdapter = new PimdexxSystem.SystemOrangeDataSetTableAdapters.CATEGORIATableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sEQCATEGORIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.BtnPesquisar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_categoria = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_Atualizar = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cATEGORIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Atualizar)).BeginInit();
             this.SuspendLayout();
             // 
             // cATEGORIABindingSource
@@ -66,20 +69,6 @@
             // 
             this.cATEGORIATableAdapter.ClearBeforeFill = true;
             // 
-            // dESCRICAODataGridViewTextBoxColumn
-            // 
-            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "Descrição Categoria";
-            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
-            this.dESCRICAODataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sEQCATEGORIADataGridViewTextBoxColumn
-            // 
-            this.sEQCATEGORIADataGridViewTextBoxColumn.DataPropertyName = "SEQCATEGORIA";
-            this.sEQCATEGORIADataGridViewTextBoxColumn.HeaderText = "Código para edição";
-            this.sEQCATEGORIADataGridViewTextBoxColumn.Name = "sEQCATEGORIADataGridViewTextBoxColumn";
-            this.sEQCATEGORIADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -90,108 +79,126 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sEQCATEGORIADataGridViewTextBoxColumn,
-            this.dESCRICAODataGridViewTextBoxColumn});
+            this.dESCRICAODataGridViewTextBoxColumn,
+            this.sEQCATEGORIADataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cATEGORIABindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 173);
+            this.dataGridView1.Location = new System.Drawing.Point(426, 136);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(242, 139);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 214);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button2
+            // dESCRICAODataGridViewTextBoxColumn
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(538, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 51);
-            this.button2.TabIndex = 130;
-            this.button2.Text = "Excluir";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "Descrição Categoria";
+            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
+            this.dESCRICAODataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // button3
+            // sEQCATEGORIADataGridViewTextBoxColumn
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(383, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 51);
-            this.button3.TabIndex = 131;
-            this.button3.Text = "Limpar ";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.sEQCATEGORIADataGridViewTextBoxColumn.DataPropertyName = "SEQCATEGORIA";
+            this.sEQCATEGORIADataGridViewTextBoxColumn.HeaderText = "Código CAD";
+            this.sEQCATEGORIADataGridViewTextBoxColumn.Name = "sEQCATEGORIADataGridViewTextBoxColumn";
+            this.sEQCATEGORIADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // button5
+            // BtnExcluir
             // 
-            this.button5.BackColor = System.Drawing.Color.Orange;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(228, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 51);
-            this.button5.TabIndex = 132;
-            this.button5.Text = "Alterar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BtnExcluir.BackColor = System.Drawing.Color.Red;
+            this.BtnExcluir.Enabled = false;
+            this.BtnExcluir.FlatAppearance.BorderSize = 0;
+            this.BtnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.ForeColor = System.Drawing.Color.White;
+            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
+            this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnExcluir.Location = new System.Drawing.Point(511, 12);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(144, 51);
+            this.BtnExcluir.TabIndex = 130;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // BtnLimpar
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(75, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 51);
-            this.button1.TabIndex = 133;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLimpar.FlatAppearance.BorderSize = 0;
+            this.BtnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpar.ForeColor = System.Drawing.Color.White;
+            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("BtnLimpar.Image")));
+            this.BtnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLimpar.Location = new System.Drawing.Point(356, 12);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(144, 51);
+            this.BtnLimpar.TabIndex = 131;
+            this.BtnLimpar.Text = "Limpar ";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.BackColor = System.Drawing.Color.Orange;
+            this.btnAlterar.Enabled = false;
+            this.btnAlterar.FlatAppearance.BorderSize = 0;
+            this.btnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.ForeColor = System.Drawing.Color.White;
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlterar.Location = new System.Drawing.Point(201, 12);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(144, 51);
+            this.btnAlterar.TabIndex = 132;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // BtnPesquisar
+            // 
+            this.BtnPesquisar.BackColor = System.Drawing.Color.Firebrick;
+            this.BtnPesquisar.Enabled = false;
+            this.BtnPesquisar.FlatAppearance.BorderSize = 0;
+            this.BtnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPesquisar.Image")));
+            this.BtnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPesquisar.Location = new System.Drawing.Point(48, 12);
+            this.BtnPesquisar.Name = "BtnPesquisar";
+            this.BtnPesquisar.Size = new System.Drawing.Size(144, 51);
+            this.BtnPesquisar.TabIndex = 133;
+            this.BtnPesquisar.Text = "Pesquisar";
+            this.BtnPesquisar.UseVisualStyleBackColor = false;
+            this.BtnPesquisar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 87);
+            this.label1.Location = new System.Drawing.Point(68, 207);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
+            this.label1.Size = new System.Drawing.Size(160, 16);
             this.label1.TabIndex = 134;
-            this.label1.Text = "Categoria:";
+            this.label1.Text = "Cadastrar nova categoria";
             // 
             // txt_categoria
             // 
             this.txt_categoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_categoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_categoria.Location = new System.Drawing.Point(69, 106);
+            this.txt_categoria.Location = new System.Drawing.Point(71, 226);
             this.txt_categoria.Multiline = true;
             this.txt_categoria.Name = "txt_categoria";
             this.txt_categoria.Size = new System.Drawing.Size(290, 29);
             this.txt_categoria.TabIndex = 135;
+            this.txt_categoria.TextChanged += new System.EventHandler(this.txt_categoria_TextChanged);
             // 
             // button4
             // 
@@ -203,12 +210,11 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(69, 377);
+            this.button4.Location = new System.Drawing.Point(112, 274);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 39);
+            this.button4.Size = new System.Drawing.Size(179, 42);
             this.button4.TabIndex = 136;
-            this.button4.Text = "Inserir Novo";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Text = "Inserir";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -216,31 +222,52 @@
             // 
             this.id.AutoSize = true;
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.Location = new System.Drawing.Point(316, 170);
+            this.id.Location = new System.Drawing.Point(423, 89);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(133, 16);
+            this.id.Size = new System.Drawing.Size(83, 16);
             this.id.TabIndex = 137;
-            this.id.Text = "Código da Categoria";
+            this.id.Text = "Código CAD";
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(317, 191);
+            this.textBox1.Location = new System.Drawing.Point(426, 108);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 26);
+            this.textBox1.Size = new System.Drawing.Size(168, 22);
             this.textBox1.TabIndex = 138;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(46, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 139;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(597, 89);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 140;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // Btn_Atualizar
+            // 
+            this.Btn_Atualizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Atualizar.Image")));
+            this.Btn_Atualizar.Location = new System.Drawing.Point(3, 130);
+            this.Btn_Atualizar.Name = "Btn_Atualizar";
+            this.Btn_Atualizar.Size = new System.Drawing.Size(13, 13);
+            this.Btn_Atualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Btn_Atualizar.TabIndex = 141;
+            this.Btn_Atualizar.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(71, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 37);
+            this.button1.TabIndex = 142;
+            this.button1.Text = "export";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Categorias
             // 
@@ -248,16 +275,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_Atualizar);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.id);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.txt_categoria);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnPesquisar);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.BtnLimpar);
+            this.Controls.Add(this.BtnExcluir);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Categorias";
@@ -267,7 +296,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cATEGORIABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Atualizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,18 +307,20 @@
         private SystemOrangeDataSet systemOrangeDataSet;
         private System.Windows.Forms.BindingSource cATEGORIABindingSource;
         private SystemOrangeDataSetTableAdapters.CATEGORIATableAdapter cATEGORIATableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sEQCATEGORIADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnLimpar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button BtnPesquisar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_categoria;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label id;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sEQCATEGORIADataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox Btn_Atualizar;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -379,7 +379,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(278, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(267, 14);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(12, 12);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -678,7 +678,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel8.Controls.Add(this.label18);
-            this.panel8.Location = new System.Drawing.Point(2, 2);
+            this.panel8.Location = new System.Drawing.Point(2, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(259, 25);
             this.panel8.TabIndex = 222;

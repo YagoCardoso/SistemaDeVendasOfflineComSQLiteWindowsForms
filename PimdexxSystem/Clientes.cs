@@ -72,7 +72,7 @@ namespace PimdexxSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if(txt_CPF.Text != null)
+            if(txt_CPF.Text != null && txt_CPF.Text != "")
             {
                 SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
                 SqlCommand command = new SqlCommand("select * from CLIENTE where CPF=@CPF", sql);
@@ -88,17 +88,21 @@ namespace PimdexxSystem
                     {
                         throw new Exception("Produto não encontrado!");
                     }
-                    drms.Read();
-                    txt_CPF.Text = Convert.ToString(drms["CPF"]);
-                    txt_NomeCompleto.Text = Convert.ToString(drms["NOME"]);
-                    txt_dtNascimento.Text = Convert.ToString(drms["DTNASCIMENTO"]);
-                    txt_Endereco.Text = Convert.ToString(drms["ENDERECO"]);
-                    txt_Bairro.Text = Convert.ToString(drms["BAIRRO"]);
-                    txt_Cidade.Text = Convert.ToString(drms["CIDADE"]);
-                    txt_CEP.Text = Convert.ToString(drms["CEP"]);
-                    txt_UF.Text = Convert.ToString(drms["UF"]);
-                    txt_RG.Text = Convert.ToString(drms["RG"]);
-                    txt_Fone.Text = Convert.ToString(drms["FONE"]);
+                    else
+                    {
+                        drms.Read();
+                        txt_CPF.Text = Convert.ToString(drms["CPF"]);
+                        txt_NomeCompleto.Text = Convert.ToString(drms["NOME"]);
+                        txt_dtNascimento.Text = Convert.ToString(drms["DTNASCIMENTO"]);
+                        txt_Endereco.Text = Convert.ToString(drms["ENDERECO"]);
+                        txt_Bairro.Text = Convert.ToString(drms["BAIRRO"]);
+                        txt_Cidade.Text = Convert.ToString(drms["CIDADE"]);
+                        txt_CEP.Text = Convert.ToString(drms["CEP"]);
+                        txt_UF.Text = Convert.ToString(drms["UF"]);
+                        txt_RG.Text = Convert.ToString(drms["RG"]);
+                        txt_Fone.Text = Convert.ToString(drms["FONE"]);
+                    }
+                  
 
 
                 }
@@ -111,6 +115,7 @@ namespace PimdexxSystem
                     sql.Close();
                 }
             }
+            else { MessageBox.Show("ATENÇÃO DIGITE UM CPF PARA PESQUISAR!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information); }
 
 
 
@@ -244,6 +249,21 @@ namespace PimdexxSystem
             ListaClientes f = new ListaClientes();
 
             f.Show();
+        }
+
+        private void txt_CPF_Click(object sender, EventArgs e)
+        {
+            LABEL_CPF.Text = "";
+        }
+
+        private void txt_CPF_Click_1(object sender, EventArgs e)
+        {
+            LABEL_CPF.Text = "";
+        }
+
+        private void LABEL_CPF_Click(object sender, EventArgs e)
+        {
+            LABEL_CPF.Text = "";
         }
     }
 }

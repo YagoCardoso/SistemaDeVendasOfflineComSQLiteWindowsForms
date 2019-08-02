@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produtos));
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnPesquisar = new System.Windows.Forms.Button();
+            this.BtnAlterar = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnInserir = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.txt_codProduto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -47,102 +47,106 @@
             this.systemOrangeDataSet1 = new PimdexxSystem.SystemOrangeDataSet1();
             this.cATEGORIATableAdapter = new PimdexxSystem.SystemOrangeDataSet1TableAdapters.CATEGORIATableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cATEGORIABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button4
+            // BtnPesquisar
             // 
-            this.button4.BackColor = System.Drawing.Color.Firebrick;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(53, 10);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 51);
-            this.button4.TabIndex = 137;
-            this.button4.Text = "Pesquisar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.BtnPesquisar.BackColor = System.Drawing.Color.Firebrick;
+            this.BtnPesquisar.Enabled = false;
+            this.BtnPesquisar.FlatAppearance.BorderSize = 0;
+            this.BtnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPesquisar.Image")));
+            this.BtnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPesquisar.Location = new System.Drawing.Point(53, 10);
+            this.BtnPesquisar.Name = "BtnPesquisar";
+            this.BtnPesquisar.Size = new System.Drawing.Size(144, 51);
+            this.BtnPesquisar.TabIndex = 137;
+            this.BtnPesquisar.Text = "Pesquisar";
+            this.BtnPesquisar.UseVisualStyleBackColor = false;
+            this.BtnPesquisar.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button6
+            // BtnAlterar
             // 
-            this.button6.BackColor = System.Drawing.Color.Orange;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(206, 10);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 51);
-            this.button6.TabIndex = 136;
-            this.button6.Text = "Alterar";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BtnAlterar.BackColor = System.Drawing.Color.Orange;
+            this.BtnAlterar.Enabled = false;
+            this.BtnAlterar.FlatAppearance.BorderSize = 0;
+            this.BtnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlterar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAlterar.ForeColor = System.Drawing.Color.White;
+            this.BtnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAlterar.Image")));
+            this.BtnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAlterar.Location = new System.Drawing.Point(206, 10);
+            this.BtnAlterar.Name = "BtnAlterar";
+            this.BtnAlterar.Size = new System.Drawing.Size(144, 51);
+            this.BtnAlterar.TabIndex = 136;
+            this.BtnAlterar.Text = "Alterar";
+            this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // BtnLimpar
             // 
-            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(361, 10);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 51);
-            this.button7.TabIndex = 135;
-            this.button7.Text = "Limpar ";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLimpar.FlatAppearance.BorderSize = 0;
+            this.BtnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpar.ForeColor = System.Drawing.Color.White;
+            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("BtnLimpar.Image")));
+            this.BtnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLimpar.Location = new System.Drawing.Point(361, 10);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(144, 51);
+            this.BtnLimpar.TabIndex = 135;
+            this.BtnLimpar.Text = "Limpar ";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // BtnExcluir
             // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(516, 10);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 51);
-            this.button8.TabIndex = 134;
-            this.button8.Text = "Excluir";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.BtnExcluir.BackColor = System.Drawing.Color.Red;
+            this.BtnExcluir.Enabled = false;
+            this.BtnExcluir.FlatAppearance.BorderSize = 0;
+            this.BtnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.ForeColor = System.Drawing.Color.White;
+            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
+            this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnExcluir.Location = new System.Drawing.Point(516, 10);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(144, 51);
+            this.BtnExcluir.TabIndex = 134;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button1
+            // BtnInserir
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(56, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 39);
-            this.button1.TabIndex = 138;
-            this.button1.Text = "Inserir Novo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnInserir.BackColor = System.Drawing.Color.LimeGreen;
+            this.BtnInserir.FlatAppearance.BorderSize = 0;
+            this.BtnInserir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnInserir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInserir.ForeColor = System.Drawing.Color.White;
+            this.BtnInserir.Image = ((System.Drawing.Image)(resources.GetObject("BtnInserir.Image")));
+            this.BtnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnInserir.Location = new System.Drawing.Point(56, 370);
+            this.BtnInserir.Name = "BtnInserir";
+            this.BtnInserir.Size = new System.Drawing.Size(138, 39);
+            this.BtnInserir.TabIndex = 138;
+            this.BtnInserir.Text = "Inserir Novo";
+            this.BtnInserir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnInserir.UseVisualStyleBackColor = false;
+            this.BtnInserir.Click += new System.EventHandler(this.button1_Click);
             // 
             // label17
             // 
@@ -160,6 +164,7 @@
             this.txt_codProduto.Name = "txt_codProduto";
             this.txt_codProduto.Size = new System.Drawing.Size(156, 20);
             this.txt_codProduto.TabIndex = 180;
+            this.txt_codProduto.TextChanged += new System.EventHandler(this.txt_codProduto_TextChanged);
             // 
             // label11
             // 
@@ -212,8 +217,9 @@
             this.txt_categoria.FormattingEnabled = true;
             this.txt_categoria.Location = new System.Drawing.Point(68, 237);
             this.txt_categoria.Name = "txt_categoria";
-            this.txt_categoria.Size = new System.Drawing.Size(121, 21);
+            this.txt_categoria.Size = new System.Drawing.Size(156, 21);
             this.txt_categoria.TabIndex = 184;
+            this.txt_categoria.Text = "             -- Selecione --";
             // 
             // cATEGORIABindingSource
             // 
@@ -240,12 +246,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(44, 290);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 14);
+            this.label3.TabIndex = 187;
+            this.label3.Text = "R$";
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_categoria);
             this.Controls.Add(this.label2);
@@ -255,11 +272,11 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txt_Valor);
             this.Controls.Add(this.txt_descricao);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.BtnInserir);
+            this.Controls.Add(this.BtnPesquisar);
+            this.Controls.Add(this.BtnAlterar);
+            this.Controls.Add(this.BtnLimpar);
+            this.Controls.Add(this.BtnExcluir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Produtos";
             this.ShowIcon = false;
@@ -280,11 +297,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn corDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn placaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn seguroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnPesquisar;
+        private System.Windows.Forms.Button BtnAlterar;
+        private System.Windows.Forms.Button BtnLimpar;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnInserir;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_codProduto;
         private System.Windows.Forms.Label label11;
@@ -297,5 +314,6 @@
         private System.Windows.Forms.BindingSource cATEGORIABindingSource;
         private SystemOrangeDataSet1TableAdapters.CATEGORIATableAdapter cATEGORIATableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

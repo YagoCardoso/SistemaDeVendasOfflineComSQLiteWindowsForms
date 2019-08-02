@@ -148,7 +148,8 @@ namespace PimdexxSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Relatorios());
+            Relatorios abrir = new Relatorios();
+            abrir.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

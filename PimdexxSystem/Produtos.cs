@@ -121,6 +121,12 @@ namespace PimdexxSystem
                 txt_Valor.Text = Convert.ToString(drms["VALOR"]);
                 txt_categoria.Text = Convert.ToString(drms["CATEGORIA"]);
 
+                BtnAlterar.Enabled = true;
+                BtnExcluir.Enabled = true;
+
+                BtnInserir.Enabled = false;
+
+
             }
             catch (Exception ex)
             {
@@ -158,6 +164,13 @@ namespace PimdexxSystem
                     txt_codProduto.Text = "";
                     txt_descricao.Text = "";
                     txt_Valor.Text = "";
+
+                    BtnInserir.Enabled = true;
+
+                    BtnPesquisar.Enabled = false;
+                    BtnAlterar.Enabled = false;
+                    BtnExcluir.Enabled = false;
+
 
                 }
                 catch (Exception ex)
@@ -205,6 +218,15 @@ namespace PimdexxSystem
                     txt_descricao.Text = "";
                     txt_Valor.Text = "";
 
+                    BtnInserir.Enabled = true;
+
+
+                    BtnPesquisar.Enabled = false;
+                    BtnAlterar.Enabled = false;
+                    BtnExcluir.Enabled = false;
+
+
+
                 }
                 catch (Exception ex)
                 {
@@ -241,6 +263,11 @@ namespace PimdexxSystem
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Para pesquisar, digite o código do produto no campo código e clique em pesquisar , para  Alterar ou Excluir, Poderá localizar o código em Consultar Produtos", "INFORMAÇÔES", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void txt_codProduto_TextChanged(object sender, EventArgs e)
+        {
+            BtnPesquisar.Enabled = true;
         }
     }
 

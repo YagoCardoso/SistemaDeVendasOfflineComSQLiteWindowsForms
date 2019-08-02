@@ -49,15 +49,16 @@
             this.txt_Bairro = new System.Windows.Forms.TextBox();
             this.txt_Endereco = new System.Windows.Forms.TextBox();
             this.txt_NomeCompleto = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnPesquisar = new System.Windows.Forms.Button();
+            this.BtnAlterar = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.BtnInserir = new System.Windows.Forms.Button();
             this.txt_dtNascimento = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_CPF = new validaocampos.Validacao();
+            this.txt_CPF = new System.Windows.Forms.TextBox();
+            this.LABEL_CPF = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -240,97 +241,97 @@
             this.txt_NomeCompleto.Size = new System.Drawing.Size(422, 20);
             this.txt_NomeCompleto.TabIndex = 183;
             // 
-            // button4
+            // BtnPesquisar
             // 
-            this.button4.BackColor = System.Drawing.Color.Firebrick;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(60, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 47);
-            this.button4.TabIndex = 182;
-            this.button4.Text = "Pesquisar";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.BtnPesquisar.BackColor = System.Drawing.Color.Firebrick;
+            this.BtnPesquisar.FlatAppearance.BorderSize = 0;
+            this.BtnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPesquisar.Image")));
+            this.BtnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnPesquisar.Location = new System.Drawing.Point(60, 12);
+            this.BtnPesquisar.Name = "BtnPesquisar";
+            this.BtnPesquisar.Size = new System.Drawing.Size(144, 47);
+            this.BtnPesquisar.TabIndex = 182;
+            this.BtnPesquisar.Text = "Pesquisar";
+            this.BtnPesquisar.UseVisualStyleBackColor = false;
+            this.BtnPesquisar.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button6
+            // BtnAlterar
             // 
-            this.button6.BackColor = System.Drawing.Color.Orange;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(213, 12);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 47);
-            this.button6.TabIndex = 181;
-            this.button6.Text = "Alterar";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BtnAlterar.BackColor = System.Drawing.Color.Orange;
+            this.BtnAlterar.FlatAppearance.BorderSize = 0;
+            this.BtnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlterar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAlterar.ForeColor = System.Drawing.Color.White;
+            this.BtnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAlterar.Image")));
+            this.BtnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAlterar.Location = new System.Drawing.Point(213, 12);
+            this.BtnAlterar.Name = "BtnAlterar";
+            this.BtnAlterar.Size = new System.Drawing.Size(144, 47);
+            this.BtnAlterar.TabIndex = 181;
+            this.BtnAlterar.Text = "Alterar";
+            this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // BtnLimpar
             // 
-            this.button7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(368, 12);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 47);
-            this.button7.TabIndex = 180;
-            this.button7.Text = "Limpar ";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLimpar.FlatAppearance.BorderSize = 0;
+            this.BtnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLimpar.ForeColor = System.Drawing.Color.White;
+            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("BtnLimpar.Image")));
+            this.BtnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLimpar.Location = new System.Drawing.Point(368, 12);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(144, 47);
+            this.BtnLimpar.TabIndex = 180;
+            this.BtnLimpar.Text = "Limpar ";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // BtnExcluir
             // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(523, 12);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 47);
-            this.button8.TabIndex = 179;
-            this.button8.Text = "Excluir";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.BtnExcluir.BackColor = System.Drawing.Color.Red;
+            this.BtnExcluir.FlatAppearance.BorderSize = 0;
+            this.BtnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExcluir.ForeColor = System.Drawing.Color.White;
+            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
+            this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnExcluir.Location = new System.Drawing.Point(523, 12);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(144, 47);
+            this.BtnExcluir.TabIndex = 179;
+            this.BtnExcluir.Text = "Excluir";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button1
+            // BtnInserir
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 39);
-            this.button1.TabIndex = 209;
-            this.button1.Text = "Inserir Novo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnInserir.BackColor = System.Drawing.Color.LimeGreen;
+            this.BtnInserir.FlatAppearance.BorderSize = 0;
+            this.BtnInserir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnInserir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnInserir.ForeColor = System.Drawing.Color.White;
+            this.BtnInserir.Image = ((System.Drawing.Image)(resources.GetObject("BtnInserir.Image")));
+            this.BtnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnInserir.Location = new System.Drawing.Point(12, 384);
+            this.BtnInserir.Name = "BtnInserir";
+            this.BtnInserir.Size = new System.Drawing.Size(138, 39);
+            this.BtnInserir.TabIndex = 209;
+            this.BtnInserir.Text = "Inserir Novo";
+            this.BtnInserir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnInserir.UseVisualStyleBackColor = false;
+            this.BtnInserir.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_dtNascimento
             // 
@@ -342,7 +343,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(592, 354);
+            this.pictureBox1.Location = new System.Drawing.Point(611, 354);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -354,7 +355,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(589, 337);
+            this.label9.Location = new System.Drawing.Point(608, 337);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(156, 14);
             this.label9.TabIndex = 213;
@@ -364,9 +365,22 @@
             // 
             this.txt_CPF.Location = new System.Drawing.Point(265, 264);
             this.txt_CPF.Name = "txt_CPF";
-            this.txt_CPF.Size = new System.Drawing.Size(151, 20);
-            this.txt_CPF.TabIndex = 211;
+            this.txt_CPF.Size = new System.Drawing.Size(156, 20);
+            this.txt_CPF.TabIndex = 214;
             this.txt_CPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_CPF.Click += new System.EventHandler(this.txt_CPF_Click_1);
+            // 
+            // LABEL_CPF
+            // 
+            this.LABEL_CPF.AutoSize = true;
+            this.LABEL_CPF.BackColor = System.Drawing.Color.White;
+            this.LABEL_CPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LABEL_CPF.Location = new System.Drawing.Point(312, 268);
+            this.LABEL_CPF.Name = "LABEL_CPF";
+            this.LABEL_CPF.Size = new System.Drawing.Size(109, 12);
+            this.LABEL_CPF.TabIndex = 216;
+            this.LABEL_CPF.Text = "  Digite apenas numeros..";
+            this.LABEL_CPF.Click += new System.EventHandler(this.LABEL_CPF_Click);
             // 
             // Clientes
             // 
@@ -374,11 +388,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.LABEL_CPF);
+            this.Controls.Add(this.txt_CPF);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt_CPF);
             this.Controls.Add(this.txt_dtNascimento);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnInserir);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label10);
@@ -398,10 +413,10 @@
             this.Controls.Add(this.txt_Bairro);
             this.Controls.Add(this.txt_Endereco);
             this.Controls.Add(this.txt_NomeCompleto);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.BtnPesquisar);
+            this.Controls.Add(this.BtnAlterar);
+            this.Controls.Add(this.BtnLimpar);
+            this.Controls.Add(this.BtnExcluir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
             this.Text = "Clientes";
@@ -434,14 +449,15 @@
         private System.Windows.Forms.TextBox txt_Bairro;
         private System.Windows.Forms.TextBox txt_Endereco;
         private System.Windows.Forms.TextBox txt_NomeCompleto;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnPesquisar;
+        private System.Windows.Forms.Button BtnAlterar;
+        private System.Windows.Forms.Button BtnLimpar;
+        private System.Windows.Forms.Button BtnExcluir;
+        private System.Windows.Forms.Button BtnInserir;
         private System.Windows.Forms.DateTimePicker txt_dtNascimento;
-        private validaocampos.Validacao txt_CPF;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_CPF;
+        private System.Windows.Forms.Label LABEL_CPF;
     }
 }

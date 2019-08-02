@@ -36,12 +36,10 @@ namespace PimdexxSystem
         private void btn_SalvarNovo_Click(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
-            SqlCommand command = new SqlCommand("insert into USUARIO(CPF, NOME, DTNASCIMENTO, ENDERECO, BAIRRO, CIDADE, CEP, UF, RG, " +
-                "FONE, SALARIO, TIPOUSU, DTADMISSAO, DTDESLIGAMENTO, USUARIO, SENHA ) values (@varCpf, @varNome, @varDTnascimento, " +
-                "@varEndereco, @varBairro, @varCidade, @varCep, @varUF, @varRG, @varFone, @varSalario, @varTipousu, @varDTadmissao, " +
-                "@varDTdesligamento, @varUsuario, @varSenha )", sql);
+            SqlCommand command = new SqlCommand("insert into USUARIO(CPF, NOME, DTNASCIMENTO, ENDERECO, BAIRRO, CIDADE, CEP, UF, RG, FONE, SALARIO, TIPOUSU, DTADMISSAO, DTDESLIGAMENTO, USUARIO, SENHA ) values (@varCpf, @varNome, @varDTnascimento, @varEndereco, @varBairro, @varCidade, @varCep, @varUF, @varRG, @varFone, @varSalario, @varTipousu, @varDTadmissao, @varDTdesligamento, @varUsuario, @varSenha)", sql);
 
-            command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = txt_CPF.Text;
+
+            command.Parameters.Add("@varCpf", SqlDbType.Int).Value = txt_CPF.Text;
             command.Parameters.Add("@varNome", SqlDbType.NVarChar).Value = txt_NomeCompleto.Text;
             command.Parameters.Add("@varDTnascimento", SqlDbType.DateTime).Value = txt_dtNascimento.Text;
             command.Parameters.Add("@varEndereco", SqlDbType.NVarChar).Value = txt_Endereco.Text;
@@ -101,7 +99,7 @@ namespace PimdexxSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (txt_CPF.Text != null)
+            if (txt_CPF.Text != null && txt_CPF.Text != "")
             {
                 SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
                 SqlCommand command = new SqlCommand("select * from USUARIO where CPF=@CPF", sql);
@@ -115,7 +113,7 @@ namespace PimdexxSystem
                     SqlDataReader drms = command.ExecuteReader();
                     if (drms.HasRows == false)
                     {
-                        throw new Exception("Cadastro  não encontrado!");
+                        throw new Exception("Usuário  não encontrado!");
                     }
                     drms.Read();
                     txt_CPF.Text = Convert.ToString(drms["CPF"]);
@@ -147,6 +145,7 @@ namespace PimdexxSystem
                     sql.Close();
                 }
             }
+            else { MessageBox.Show("ATENÇÃO DIGITE UM CPF PARA PESQUISAR!", "ATENÇÂO", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -232,7 +231,7 @@ namespace PimdexxSystem
                 }
                 else
                 {
-                    MessageBox.Show("ATENÇÃO CAMPOS OBRIGATORIOS!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Primeiro pesquise por algum CPF, para alterar registros.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else { MessageBox.Show("Primeiro pesquise por algum CPF, para alterar registros.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information); }
@@ -288,6 +287,28 @@ namespace PimdexxSystem
                     sql.Close();
                 }
             }
+        }
+
+        private void txt_CPF_Click(object sender, EventArgs e)
+        {
+            LABEL_CPF.Text = "";
+        }
+
+        private void txt_Salario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            VisualizarUsuario ver = new VisualizarUsuario();
+
+            ver.Show();
+        }
+
+        private void LABEL_CPF_Click(object sender, EventArgs e)
+        {
+            LABEL_CPF.Text = "";
         }
     }
 }

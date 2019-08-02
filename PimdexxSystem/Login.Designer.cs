@@ -41,12 +41,18 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelclone = new System.Windows.Forms.Label();
+            this.txtclone = new System.Windows.Forms.TextBox();
+            this.LABEL_INFOYAGO = new System.Windows.Forms.Label();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -148,6 +154,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(209, 27);
             this.txtSenha.TabIndex = 10;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // pictureBox1
             // 
@@ -191,12 +198,73 @@
             this.label3.TabIndex = 40;
             this.label3.Text = "Gerenciamento de Vendas";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(253, 324);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(20, 17);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(200, 326);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "ver senha";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // labelclone
+            // 
+            this.labelclone.AutoSize = true;
+            this.labelclone.BackColor = System.Drawing.Color.Transparent;
+            this.labelclone.ForeColor = System.Drawing.Color.White;
+            this.labelclone.Location = new System.Drawing.Point(74, 283);
+            this.labelclone.Name = "labelclone";
+            this.labelclone.Size = new System.Drawing.Size(38, 13);
+            this.labelclone.TabIndex = 43;
+            this.labelclone.Text = "Senha";
+            // 
+            // txtclone
+            // 
+            this.txtclone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.txtclone.ForeColor = System.Drawing.Color.White;
+            this.txtclone.Location = new System.Drawing.Point(68, 291);
+            this.txtclone.Multiline = true;
+            this.txtclone.Name = "txtclone";
+            this.txtclone.Size = new System.Drawing.Size(209, 27);
+            this.txtclone.TabIndex = 44;
+            this.txtclone.TextChanged += new System.EventHandler(this.txtclone_TextChanged);
+            // 
+            // LABEL_INFOYAGO
+            // 
+            this.LABEL_INFOYAGO.AutoSize = true;
+            this.LABEL_INFOYAGO.BackColor = System.Drawing.Color.Yellow;
+            this.LABEL_INFOYAGO.Location = new System.Drawing.Point(12, 270);
+            this.LABEL_INFOYAGO.Name = "LABEL_INFOYAGO";
+            this.LABEL_INFOYAGO.Size = new System.Drawing.Size(249, 13);
+            this.LABEL_INFOYAGO.TabIndex = 45;
+            this.LABEL_INFOYAGO.Text = "AQUI TEM DOIS TEXBOX EM CIMA DO OUTRO>\r\n";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(359, 473);
+            this.Controls.Add(this.LABEL_INFOYAGO);
+            this.Controls.Add(this.labelclone);
+            this.Controls.Add(this.txtclone);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -217,6 +285,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +304,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelclone;
+        private System.Windows.Forms.TextBox txtclone;
+        private System.Windows.Forms.Label LABEL_INFOYAGO;
     }
 }
 

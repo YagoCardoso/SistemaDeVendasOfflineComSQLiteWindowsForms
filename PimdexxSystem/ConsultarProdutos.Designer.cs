@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GridVisualizarProdutos = new System.Windows.Forms.DataGridView();
             this.sEQPRODUTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vALORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,30 +38,30 @@
             this.systemOrangeDataSet2 = new PimdexxSystem.SystemOrangeDataSet2();
             this.label1 = new System.Windows.Forms.Label();
             this.pRODUTOTableAdapter = new PimdexxSystem.SystemOrangeDataSet2TableAdapters.PRODUTOTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridVisualizarProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUTOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // GridVisualizarProdutos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.GridVisualizarProdutos.AllowUserToAddRows = false;
+            this.GridVisualizarProdutos.AllowUserToDeleteRows = false;
+            this.GridVisualizarProdutos.AutoGenerateColumns = false;
+            this.GridVisualizarProdutos.BackgroundColor = System.Drawing.Color.White;
+            this.GridVisualizarProdutos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridVisualizarProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridVisualizarProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sEQPRODUTODataGridViewTextBoxColumn,
             this.dESCRICAODataGridViewTextBoxColumn,
             this.vALORDataGridViewTextBoxColumn,
             this.cATEGORIADataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pRODUTOBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 398);
-            this.dataGridView1.TabIndex = 0;
+            this.GridVisualizarProdutos.DataSource = this.pRODUTOBindingSource;
+            this.GridVisualizarProdutos.Location = new System.Drawing.Point(32, 40);
+            this.GridVisualizarProdutos.Name = "GridVisualizarProdutos";
+            this.GridVisualizarProdutos.ReadOnly = true;
+            this.GridVisualizarProdutos.Size = new System.Drawing.Size(440, 398);
+            this.GridVisualizarProdutos.TabIndex = 0;
             // 
             // sEQPRODUTODataGridViewTextBoxColumn
             // 
@@ -122,12 +122,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.GridVisualizarProdutos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarProdutos";
             this.Text = "ConsultarProdutos";
             this.Load += new System.EventHandler(this.ConsultarProdutos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridVisualizarProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUTOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet2)).EndInit();
             this.ResumeLayout(false);
@@ -137,7 +137,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView GridVisualizarProdutos;
         private System.Windows.Forms.Label label1;
         private SystemOrangeDataSet2 systemOrangeDataSet2;
         private System.Windows.Forms.BindingSource pRODUTOBindingSource;

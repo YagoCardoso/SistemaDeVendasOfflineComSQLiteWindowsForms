@@ -24,7 +24,7 @@ namespace validaocampos
                 this.Text = "";
         }
 
-        //quando recver o foco vai seleciona todo texto contido e ira colorir tudo de azul
+        //quando recver o foco vai seleciona todo texto contido e ira colorir tudo de vermelho
         protected override void OnGotFocus(EventArgs e)
         {
             base.OnGotFocus(e);
@@ -52,7 +52,7 @@ namespace validaocampos
 
             if (e.KeyChar == 8)
                 return;
-            //se for deferente de um numero nao escrevera
+            //se for diferente de um numero nao escrevera
             if (!char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;

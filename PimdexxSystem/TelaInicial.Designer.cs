@@ -44,8 +44,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.painelPrincipal = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_contasReceber = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -191,7 +189,7 @@
             this.btn_relatorio.Name = "btn_relatorio";
             this.btn_relatorio.Size = new System.Drawing.Size(217, 32);
             this.btn_relatorio.TabIndex = 10;
-            this.btn_relatorio.Text = "     Relatórios ";
+            this.btn_relatorio.Text = "   Relatório/Anotações";
             this.btn_relatorio.UseVisualStyleBackColor = false;
             this.btn_relatorio.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -276,34 +274,6 @@
             this.painelPrincipal.Size = new System.Drawing.Size(778, 465);
             this.painelPrincipal.TabIndex = 3;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(0, 428);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
-            this.panel2.TabIndex = 11;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // btn_contasReceber
-            // 
-            this.btn_contasReceber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btn_contasReceber.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_contasReceber.FlatAppearance.BorderSize = 0;
-            this.btn_contasReceber.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_contasReceber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_contasReceber.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_contasReceber.ForeColor = System.Drawing.Color.White;
-            this.btn_contasReceber.Image = ((System.Drawing.Image)(resources.GetObject("btn_contasReceber.Image")));
-            this.btn_contasReceber.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_contasReceber.Location = new System.Drawing.Point(5, 428);
-            this.btn_contasReceber.Name = "btn_contasReceber";
-            this.btn_contasReceber.Size = new System.Drawing.Size(214, 32);
-            this.btn_contasReceber.TabIndex = 12;
-            this.btn_contasReceber.Text = "Contas á Receber";
-            this.btn_contasReceber.UseVisualStyleBackColor = false;
-            this.btn_contasReceber.Click += new System.EventHandler(this.button12_Click);
-            // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -311,8 +281,6 @@
             this.MenuVertical.Controls.Add(this.label1);
             this.MenuVertical.Controls.Add(this.btn_categorias);
             this.MenuVertical.Controls.Add(this.pictureBox2);
-            this.MenuVertical.Controls.Add(this.btn_contasReceber);
-            this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.painelPrincipal);
             this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.panel5);
@@ -534,8 +502,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel painelPrincipal;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_contasReceber;
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.PictureBox btnFechar;
         private System.Windows.Forms.PictureBox btnMinimizar;

@@ -87,7 +87,8 @@ namespace PimdexxSystem
 
         private void Veiculos_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text == "10" && txtSenha.Text == "10")
+            txtclone.Text = txtSenha.Text;
+            if (txtLogin.Text == "10" && txtSenha.Text == "10" )
             {
                 this.Close();
                 //campo nt foi gerado no começo da classe
@@ -123,7 +124,9 @@ namespace PimdexxSystem
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            LABEL_INFOYAGO.Visible = false;
+            labelclone.Visible = false;
+            txtclone.Visible = false;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -150,5 +153,27 @@ namespace PimdexxSystem
 
         }
 
+        private void txtclone_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            //Ver senha
+            labelclone.Visible = true;
+            if(txtclone.Visible == true){ txtclone.Visible = false; } else { txtclone.Visible = true; }
+            txtclone.Text = txtSenha.Text;
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
