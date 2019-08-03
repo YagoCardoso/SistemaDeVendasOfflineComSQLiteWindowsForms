@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace PimdexxSystem
 {
@@ -81,27 +82,78 @@ namespace PimdexxSystem
                 Application.Exit();
             }
         }
-        
 
-         
+
+
 
         private void Veiculos_Click(object sender, EventArgs e)
         {
             txtclone.Text = txtSenha.Text;
-            if (txtLogin.Text == "10" && txtSenha.Text == "10" )
+
+            if (txtLogin.Text == "master" && txtSenha.Text == "123456")
             {
                 this.Close();
                 //campo nt foi gerado no começo da classe
                 //novo forme se refere ao nome da funçao criado apos essa
-                 nt = new Thread(novoForm);
+                nt = new Thread(novoForm);
                 nt.SetApartmentState(ApartmentState.STA);
-                 nt.Start();
-              
+                nt.Start();
+
             }
             else
             {
-                MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
+                SqlCommand command = new SqlCommand("select * from USUARIO where USUARIO=@varUsuario and SENHA=@varSenha", sql);
+
+                command.Parameters.Add("@varUsuario", SqlDbType.NVarChar).Value = txtLogin.Text;
+                command.Parameters.Add("@varSenha", SqlDbType.NVarChar).Value = txtSenha.Text;
+
+                try
+                {
+                    sql.Open();
+                    SqlDataReader drms = command.ExecuteReader();
+                    if (drms.HasRows == false)
+                    {
+                        MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    drms.Read();
+
+                    nt = new Thread(novoForm);
+                    nt.SetApartmentState(ApartmentState.STA);
+                    nt.Start();
+                    this.Visible = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sql.Close();
+                }
+
             }
+
+
+
+            //if (txtLogin.Text == "master" && txtSenha.Text == "123456" )
+            //{
+            //    this.Close();
+            //    //campo nt foi gerado no começo da classe
+            //    //novo forme se refere ao nome da funçao criado apos essa
+            //     nt = new Thread(novoForm);
+            //    nt.SetApartmentState(ApartmentState.STA);
+            //     nt.Start();
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
         }
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -174,6 +226,14 @@ namespace PimdexxSystem
         private void pictureBox4_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //Ver senha
+            labelclone.Visible = true;
+            if (txtclone.Visible == true) { txtclone.Visible = false; } else { txtclone.Visible = true; }
+            txtclone.Text = txtSenha.Text;
         }
     }
 }

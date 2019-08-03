@@ -43,12 +43,13 @@
             this.rELATORIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rELATORIOSTableAdapter = new PimdexxSystem.SystemOrangeDataSet4TableAdapters.RELATORIOSTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Label_INFO = new System.Windows.Forms.Label();
             this.sEQRELATORIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Label_INFO = new System.Windows.Forms.Label();
             this.txt_codRelatorio = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rELATORIOSBindingSource)).BeginInit();
@@ -224,6 +225,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(445, 354);
             this.dataGridView1.TabIndex = 151;
             // 
+            // sEQRELATORIODataGridViewTextBoxColumn
+            // 
+            this.sEQRELATORIODataGridViewTextBoxColumn.DataPropertyName = "SEQRELATORIO";
+            this.sEQRELATORIODataGridViewTextBoxColumn.HeaderText = "Nº DOC";
+            this.sEQRELATORIODataGridViewTextBoxColumn.Name = "sEQRELATORIODataGridViewTextBoxColumn";
+            this.sEQRELATORIODataGridViewTextBoxColumn.ReadOnly = true;
+            this.sEQRELATORIODataGridViewTextBoxColumn.Width = 50;
+            // 
+            // dESCRICAODataGridViewTextBoxColumn
+            // 
+            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "Texto";
+            this.dESCRICAODataGridViewTextBoxColumn.MinimumWidth = 20;
+            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
+            this.dESCRICAODataGridViewTextBoxColumn.ReadOnly = true;
+            this.dESCRICAODataGridViewTextBoxColumn.Width = 400;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
@@ -254,23 +272,6 @@
             this.Label_INFO.Text = "Para Editar ou Excluir Digite aqui o Nº DOC encontrado abaixo e clique em pesquis" +
     "ar...";
             // 
-            // sEQRELATORIODataGridViewTextBoxColumn
-            // 
-            this.sEQRELATORIODataGridViewTextBoxColumn.DataPropertyName = "SEQRELATORIO";
-            this.sEQRELATORIODataGridViewTextBoxColumn.HeaderText = "Nº DOC";
-            this.sEQRELATORIODataGridViewTextBoxColumn.Name = "sEQRELATORIODataGridViewTextBoxColumn";
-            this.sEQRELATORIODataGridViewTextBoxColumn.ReadOnly = true;
-            this.sEQRELATORIODataGridViewTextBoxColumn.Width = 50;
-            // 
-            // dESCRICAODataGridViewTextBoxColumn
-            // 
-            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "Texto";
-            this.dESCRICAODataGridViewTextBoxColumn.MinimumWidth = 20;
-            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
-            this.dESCRICAODataGridViewTextBoxColumn.ReadOnly = true;
-            this.dESCRICAODataGridViewTextBoxColumn.Width = 400;
-            // 
             // txt_codRelatorio
             // 
             this.txt_codRelatorio.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -291,12 +292,31 @@
             this.panel1.Size = new System.Drawing.Size(316, 21);
             this.panel1.TabIndex = 156;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(632, 470);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 37);
+            this.button2.TabIndex = 157;
+            this.button2.Text = "    Exportar ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // Relatorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(804, 544);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Label_INFO);
             this.Controls.Add(this.txt_codRelatorio);
@@ -347,5 +367,6 @@
         private System.Windows.Forms.Label Label_INFO;
         private System.Windows.Forms.TextBox txt_codRelatorio;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }

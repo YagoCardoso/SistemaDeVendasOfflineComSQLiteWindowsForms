@@ -48,6 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Carregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carregamento.Designer.cs">
+      <DependentUpon>Carregamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <Compile Include="VisualizarUsuario.Designer.cs">
       <DependentUpon>VisualizarUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Carregamento.resx">
+      <DependentUpon>Carregamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>

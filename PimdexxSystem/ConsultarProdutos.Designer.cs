@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarProdutos));
             this.GridVisualizarProdutos = new System.Windows.Forms.DataGridView();
             this.sEQPRODUTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +39,7 @@
             this.systemOrangeDataSet2 = new PimdexxSystem.SystemOrangeDataSet2();
             this.label1 = new System.Windows.Forms.Label();
             this.pRODUTOTableAdapter = new PimdexxSystem.SystemOrangeDataSet2TableAdapters.PRODUTOTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridVisualizarProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUTOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet2)).BeginInit();
@@ -57,10 +59,10 @@
             this.vALORDataGridViewTextBoxColumn,
             this.cATEGORIADataGridViewTextBoxColumn});
             this.GridVisualizarProdutos.DataSource = this.pRODUTOBindingSource;
-            this.GridVisualizarProdutos.Location = new System.Drawing.Point(32, 40);
+            this.GridVisualizarProdutos.Location = new System.Drawing.Point(21, 30);
             this.GridVisualizarProdutos.Name = "GridVisualizarProdutos";
             this.GridVisualizarProdutos.ReadOnly = true;
-            this.GridVisualizarProdutos.Size = new System.Drawing.Size(440, 398);
+            this.GridVisualizarProdutos.Size = new System.Drawing.Size(440, 368);
             this.GridVisualizarProdutos.TabIndex = 0;
             // 
             // sEQPRODUTODataGridViewTextBoxColumn
@@ -115,12 +117,31 @@
             // 
             this.pRODUTOTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(326, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 32);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "    Exportar ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ConsultarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GridVisualizarProdutos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -146,5 +167,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dESCRICAODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vALORDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORIADataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }
