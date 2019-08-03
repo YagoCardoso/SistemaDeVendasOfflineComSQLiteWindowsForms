@@ -25,6 +25,8 @@ namespace PimdexxSystem
 
         private void Funcionarios_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'systemOrangeDataSet11.USUARIO'. Você pode movê-la ou removê-la conforme necessário.
+            this.uSUARIOTableAdapter.Fill(this.systemOrangeDataSet11.USUARIO);
 
         }
 
@@ -39,7 +41,7 @@ namespace PimdexxSystem
             SqlCommand command = new SqlCommand("insert into USUARIO(CPF, NOME, DTNASCIMENTO, ENDERECO, BAIRRO, CIDADE, CEP, UF, RG, FONE, SALARIO, TIPOUSU, DTADMISSAO, DTDESLIGAMENTO, USUARIO, SENHA ) values (@varCpf, @varNome, @varDTnascimento, @varEndereco, @varBairro, @varCidade, @varCep, @varUF, @varRG, @varFone, @varSalario, @varTipousu, @varDTadmissao, @varDTdesligamento, @varUsuario, @varSenha)", sql);
 
 
-            command.Parameters.Add("@varCpf", SqlDbType.Int).Value = txt_CPF.Text;
+            command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = txt_CPF.Text;
             command.Parameters.Add("@varNome", SqlDbType.NVarChar).Value = txt_NomeCompleto.Text;
             command.Parameters.Add("@varDTnascimento", SqlDbType.DateTime).Value = txt_dtNascimento.Text;
             command.Parameters.Add("@varEndereco", SqlDbType.NVarChar).Value = txt_Endereco.Text;
@@ -301,7 +303,7 @@ namespace PimdexxSystem
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            VisualizarUsuario ver = new VisualizarUsuario();
+            ConsultarUsuario ver = new ConsultarUsuario();
 
             ver.Show();
         }

@@ -117,7 +117,7 @@ namespace PimdexxSystem
                     SqlDataReader drms = command.ExecuteReader();
                     if (drms.HasRows == false)
                     {
-                        MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        throw new Exception("Usuário ou senha Incorretos.");
 
                     }
                     drms.Read();

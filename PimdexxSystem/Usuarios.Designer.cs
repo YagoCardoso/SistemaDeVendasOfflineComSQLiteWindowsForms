@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
             this.btn_SalvarNovo = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -76,10 +77,15 @@
             this.label20 = new System.Windows.Forms.Label();
             this.LABEL_CPF = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.systemOrangeDataSet11 = new PimdexxSystem.SystemOrangeDataSet11();
+            this.uSUARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uSUARIOTableAdapter = new PimdexxSystem.SystemOrangeDataSet11TableAdapters.USUARIOTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_SalvarNovo
@@ -491,6 +497,7 @@
             // txt_CPF
             // 
             this.txt_CPF.Location = new System.Drawing.Point(619, 129);
+            this.txt_CPF.MaxLength = 12;
             this.txt_CPF.Name = "txt_CPF";
             this.txt_CPF.Size = new System.Drawing.Size(142, 20);
             this.txt_CPF.TabIndex = 183;
@@ -559,6 +566,20 @@
             this.label21.TabIndex = 216;
             this.label21.Text = "R$";
             // 
+            // systemOrangeDataSet11
+            // 
+            this.systemOrangeDataSet11.DataSetName = "SystemOrangeDataSet11";
+            this.systemOrangeDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uSUARIOBindingSource
+            // 
+            this.uSUARIOBindingSource.DataMember = "USUARIO";
+            this.uSUARIOBindingSource.DataSource = this.systemOrangeDataSet11;
+            // 
+            // uSUARIOTableAdapter
+            // 
+            this.uSUARIOTableAdapter.ClearBeforeFill = true;
+            // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,6 +641,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -674,5 +697,8 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label LABEL_CPF;
         private System.Windows.Forms.Label label21;
+        private SystemOrangeDataSet11 systemOrangeDataSet11;
+        private System.Windows.Forms.BindingSource uSUARIOBindingSource;
+        private SystemOrangeDataSet11TableAdapters.USUARIOTableAdapter uSUARIOTableAdapter;
     }
 }

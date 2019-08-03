@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace PimdexxSystem
 {
-    public partial class ListaClientes : Form
+    public partial class ConsultarUsuario : Form
     {
-        public ListaClientes()
+        public ConsultarUsuario()
         {
             InitializeComponent();
         }
 
-        private void ListaClientes_Load(object sender, EventArgs e)
+        private void ConsultarUsuario_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'systemOrangeDataSet5.CLIENTE'. Você pode movê-la ou removê-la conforme necessário.
-            this.cLIENTETableAdapter.Fill(this.systemOrangeDataSet5.CLIENTE);
+            // TODO: esta linha de código carrega dados na tabela 'systemOrangeDataSet12.USUARIO'. Você pode movê-la ou removê-la conforme necessário.
+            this.uSUARIOTableAdapter.Fill(this.systemOrangeDataSet12.USUARIO);
 
         }
 
