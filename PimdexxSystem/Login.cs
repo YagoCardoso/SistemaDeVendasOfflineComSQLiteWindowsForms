@@ -28,25 +28,6 @@ namespace PimdexxSystem
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-          
-            if (txtLogin.Text == "pimdexx" && txtSenha.Text == "123456")
-            {
-                this.Close();
-                //campo nt foi gerado no começo da classe
-                //novo forme se refere ao nome da funçao criado apos essa
-                nt = new Thread(novoForm);
-                nt.SetApartmentState(ApartmentState.STA);
-                nt.Start();
-            }
-            else
-            {
-                MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-          
-
-        }
         private void novoForm()
         {
             Application.Run(new Principal());
@@ -86,75 +67,7 @@ namespace PimdexxSystem
 
 
 
-        private void Veiculos_Click(object sender, EventArgs e)
-        {
-            txtclone.Text = txtSenha.Text;
-
-            if (txtLogin.Text == "master" && txtSenha.Text == "123456")
-            {
-                this.Close();
-                //campo nt foi gerado no começo da classe
-                //novo forme se refere ao nome da funçao criado apos essa
-                nt = new Thread(novoForm);
-                nt.SetApartmentState(ApartmentState.STA);
-                nt.Start();
-
-            }
-            else
-            {
-
-
-
-                SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
-                SqlCommand command = new SqlCommand("select * from USUARIO where USUARIO=@varUsuario and SENHA=@varSenha", sql);
-
-                command.Parameters.Add("@varUsuario", SqlDbType.NVarChar).Value = txtLogin.Text;
-                command.Parameters.Add("@varSenha", SqlDbType.NVarChar).Value = txtSenha.Text;
-
-                try
-                {
-                    sql.Open();
-                    SqlDataReader drms = command.ExecuteReader();
-                    if (drms.HasRows == false)
-                    {
-                        throw new Exception("Usuário ou senha Incorretos.");
-
-                    }
-                    drms.Read();
-
-                    nt = new Thread(novoForm);
-                    nt.SetApartmentState(ApartmentState.STA);
-                    nt.Start();
-                    this.Visible = false;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    sql.Close();
-                }
-
-            }
-
-
-
-            //if (txtLogin.Text == "master" && txtSenha.Text == "123456" )
-            //{
-            //    this.Close();
-            //    //campo nt foi gerado no começo da classe
-            //    //novo forme se refere ao nome da funçao criado apos essa
-            //     nt = new Thread(novoForm);
-            //    nt.SetApartmentState(ApartmentState.STA);
-            //     nt.Start();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-        }
+     
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
         {
@@ -179,11 +92,31 @@ namespace PimdexxSystem
             LABEL_INFOYAGO.Visible = false;
             labelclone.Visible = false;
             txtclone.Visible = false;
+            txt_DatadeExpiracao.Visible = false;
+
+
+
+
+
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void Veiculos_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text == "admin" && txtSenha.Text == "123456")
+            txtclone.Text = txtSenha.Text;
+
+            #region Licença do sistema por data
+            string dataAtual = DateTime.Now.ToShortDateString().ToString();
+           // string anoAtual = DateTime.Now.Year.ToString();
+
+            DateTime data1 = new DateTime(2018, 12, 05);
+            data1.ToString("dd/MM/yyyy");
+
+            DateTime dataHoje = DateTime.Today;
+
+            txt_DatadeExpiracao.Text = dataHoje.ToShortDateString().ToString();
+            #endregion
+
+            if(txtLogin.Text == "master" && txtSenha.Text == "maksuell")
             {
                 this.Close();
                 //campo nt foi gerado no começo da classe
@@ -193,11 +126,77 @@ namespace PimdexxSystem
                 nt.Start();
 
             }
+
+            if (dataHoje > data1 ) { MessageBox.Show("Sua licença para este Software expirou, Contato o desenvolvedor\n para adquirir outra licença", "INATIVO", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             else
             {
-                MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (txtLogin.Text == "admin" && txtSenha.Text == "123456")
+                {
+                    this.Close();
+                    //campo nt foi gerado no começo da classe
+                    //novo forme se refere ao nome da funçao criado apos essa
+                    nt = new Thread(novoForm);
+                    nt.SetApartmentState(ApartmentState.STA);
+                    nt.Start();
+
+                }//Verificação de Login no banco de dados
+                else
+                {
+
+                    SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
+                    SqlCommand command = new SqlCommand("select * from USUARIO where USUARIO=@varUsuario and SENHA=@varSenha", sql);
+
+                    command.Parameters.Add("@varUsuario", SqlDbType.NVarChar).Value = txtLogin.Text;
+                    command.Parameters.Add("@varSenha", SqlDbType.NVarChar).Value = txtSenha.Text;
+
+                    try
+                    {
+                        sql.Open();
+                        SqlDataReader drms = command.ExecuteReader();
+                        if (drms.HasRows == false)
+                        {
+                            throw new Exception("Usuário ou senha Incorretos.");
+
+                        }
+                        drms.Read();
+
+                        nt = new Thread(novoForm);
+                        nt.SetApartmentState(ApartmentState.STA);
+                        nt.Start();
+                        this.Visible = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        sql.Close();
+                    }
+
+                }
+
             }
+
+
+
+            //if (txtLogin.Text == "master" && txtSenha.Text == "123456" )
+            //{
+            //    this.Close();
+            //    //campo nt foi gerado no começo da classe
+            //    //novo forme se refere ao nome da funçao criado apos essa
+            //     nt = new Thread(novoForm);
+            //    nt.SetApartmentState(ApartmentState.STA);
+            //     nt.Start();
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Login ou Senha Invalidos!", "Erro Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
         }
+
 
         private void txtLogin_TextChanged(object sender, EventArgs e)
         {

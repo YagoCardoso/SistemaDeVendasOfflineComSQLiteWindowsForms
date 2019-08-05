@@ -17,7 +17,6 @@ namespace ExportarDatagridviewToExcel
         {
             try
             {
-
                 SaveFileDialog fichero = new SaveFileDialog();
                 fichero.Filter = "Excel (*.xls)|*.xls";
                 fichero.FileName = "ArquivoExportado";
@@ -32,7 +31,7 @@ namespace ExportarDatagridviewToExcel
                     hoja_trabajo =
                         (Microsoft.Office.Interop.Excel.Worksheet)libros_trabajo.Worksheets.get_Item(1);
 
-                    //Recorremos el DataGridView rellenando la hoja de trabajo
+                    //Percorrendo o DataGridView
                     for (int i = 0; i < grd.Rows.Count - 1; i++)
                     {
                         for (int j = 0; j < grd.Columns.Count; j++)

@@ -46,6 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txt_DatadeExpiracao = new System.Windows.Forms.TextBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
@@ -254,12 +255,20 @@
             this.label4.TabIndex = 48;
             this.label4.Text = "Desenvolvido Por: Yago Maksuell";
             // 
+            // txt_DatadeExpiracao
+            // 
+            this.txt_DatadeExpiracao.Location = new System.Drawing.Point(12, 514);
+            this.txt_DatadeExpiracao.Name = "txt_DatadeExpiracao";
+            this.txt_DatadeExpiracao.Size = new System.Drawing.Size(105, 20);
+            this.txt_DatadeExpiracao.TabIndex = 49;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(357, 559);
+            this.Controls.Add(this.txt_DatadeExpiracao);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox2);
@@ -308,6 +317,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_DatadeExpiracao;
     }
 }
 
