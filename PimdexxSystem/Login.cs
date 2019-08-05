@@ -64,11 +64,6 @@ namespace PimdexxSystem
             }
         }
 
-
-
-
-     
-
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
         {
             
@@ -93,10 +88,6 @@ namespace PimdexxSystem
             labelclone.Visible = false;
             txtclone.Visible = false;
             txt_DatadeExpiracao.Visible = false;
-
-
-
-
 
         }
 

@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarUsuario));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.systemOrangeDataSet12 = new PimdexxSystem.SystemOrangeDataSet12();
-            this.uSUARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uSUARIOTableAdapter = new PimdexxSystem.SystemOrangeDataSet12TableAdapters.USUARIOTableAdapter();
-            this.button2 = new System.Windows.Forms.Button();
             this.cPFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dTNASCIMENTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,14 +47,20 @@
             this.uSUARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sENHADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uSUARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.systemOrangeDataSet12 = new PimdexxSystem.SystemOrangeDataSet12();
+            this.uSUARIOTableAdapter = new PimdexxSystem.SystemOrangeDataSet12TableAdapters.USUARIOTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet12)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cPFDataGridViewTextBoxColumn,
@@ -82,38 +84,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1082, 232);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // systemOrangeDataSet12
-            // 
-            this.systemOrangeDataSet12.DataSetName = "SystemOrangeDataSet12";
-            this.systemOrangeDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // uSUARIOBindingSource
-            // 
-            this.uSUARIOBindingSource.DataMember = "USUARIO";
-            this.uSUARIOBindingSource.DataSource = this.systemOrangeDataSet12;
-            // 
-            // uSUARIOTableAdapter
-            // 
-            this.uSUARIOTableAdapter.ClearBeforeFill = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(921, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 41);
-            this.button2.TabIndex = 145;
-            this.button2.Text = "    Exportar ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cPFDataGridViewTextBoxColumn
             // 
@@ -211,6 +181,38 @@
             this.uFDataGridViewTextBoxColumn.HeaderText = "UF";
             this.uFDataGridViewTextBoxColumn.Name = "uFDataGridViewTextBoxColumn";
             // 
+            // uSUARIOBindingSource
+            // 
+            this.uSUARIOBindingSource.DataMember = "USUARIO";
+            this.uSUARIOBindingSource.DataSource = this.systemOrangeDataSet12;
+            // 
+            // systemOrangeDataSet12
+            // 
+            this.systemOrangeDataSet12.DataSetName = "SystemOrangeDataSet12";
+            this.systemOrangeDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uSUARIOTableAdapter
+            // 
+            this.uSUARIOTableAdapter.ClearBeforeFill = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(921, 293);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(183, 41);
+            this.button2.TabIndex = 145;
+            this.button2.Text = "    Exportar ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // ConsultarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,8 +224,8 @@
             this.Text = "ConsultarUsuario";
             this.Load += new System.EventHandler(this.ConsultarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet12)).EndInit();
             this.ResumeLayout(false);
 
         }
