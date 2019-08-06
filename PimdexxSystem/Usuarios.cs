@@ -312,5 +312,34 @@ namespace PimdexxSystem
         {
             LABEL_CPF.Text = "";
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //ConsultarCep cep = new ConsultarCep();
+            //cep.Show();
+
+            if (!string.IsNullOrWhiteSpace(txt_CEP.Text))
+            {
+                using (var ws = new WSCorreios.AtendeClienteClient())
+
+                    try
+                    {
+                        var endereco = ws.consultaCEP(txt_CEP.Text.Trim());
+                        txt_UF.Text = endereco.uf;
+                        txt_Cidade.Text = endereco.cidade;
+                        txt_Bairro.Text = endereco.bairro;
+                        txt_Endereco.Text = endereco.end;
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+            }
+            else
+            {
+                MessageBox.Show("Informe um CEP para Pesquisar", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

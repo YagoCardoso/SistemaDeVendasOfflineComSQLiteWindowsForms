@@ -80,12 +80,14 @@
             this.systemOrangeDataSet11 = new PimdexxSystem.SystemOrangeDataSet11();
             this.uSUARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uSUARIOTableAdapter = new PimdexxSystem.SystemOrangeDataSet11TableAdapters.USUARIOTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_SalvarNovo
@@ -205,6 +207,7 @@
             // txt_Cidade
             // 
             this.txt_Cidade.Location = new System.Drawing.Point(166, 208);
+            this.txt_Cidade.Multiline = true;
             this.txt_Cidade.Name = "txt_Cidade";
             this.txt_Cidade.Size = new System.Drawing.Size(201, 20);
             this.txt_Cidade.TabIndex = 147;
@@ -212,6 +215,7 @@
             // txt_CEP
             // 
             this.txt_CEP.Location = new System.Drawing.Point(2, 208);
+            this.txt_CEP.Multiline = true;
             this.txt_CEP.Name = "txt_CEP";
             this.txt_CEP.Size = new System.Drawing.Size(158, 20);
             this.txt_CEP.TabIndex = 148;
@@ -219,6 +223,7 @@
             // txt_UF
             // 
             this.txt_UF.Location = new System.Drawing.Point(373, 208);
+            this.txt_UF.Multiline = true;
             this.txt_UF.Name = "txt_UF";
             this.txt_UF.Size = new System.Drawing.Size(57, 20);
             this.txt_UF.TabIndex = 149;
@@ -580,12 +585,27 @@
             // 
             this.uSUARIOTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.AccessibleName = "";
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(137, 209);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(22, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 218;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.LABEL_CPF);
             this.Controls.Add(this.label20);
@@ -643,6 +663,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemOrangeDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -700,5 +721,6 @@
         private SystemOrangeDataSet11 systemOrangeDataSet11;
         private System.Windows.Forms.BindingSource uSUARIOBindingSource;
         private SystemOrangeDataSet11TableAdapters.USUARIOTableAdapter uSUARIOTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
