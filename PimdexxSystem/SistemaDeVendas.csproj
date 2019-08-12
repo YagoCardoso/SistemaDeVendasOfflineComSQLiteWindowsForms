@@ -101,7 +101,7 @@
     <Compile Include="EfetuarVendas.Designer.cs">
       <DependentUpon>EfetuarVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exportar.cs" />
+    <Compile Include="Models\Exportar.cs" />
     <Compile Include="ListaClientes.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -16,6 +16,8 @@ namespace PimdexxSystem
     
     public partial class Login : Form
     {
+
+
         private Thread nt;
 
         public Login()
@@ -84,16 +86,20 @@ namespace PimdexxSystem
 
         private void Login_Load(object sender, EventArgs e)
         {
-            LABEL_INFOYAGO.Visible = false;
+            LABEL_INFOYAGO.Visible = false;//label pra eu saber que tmeg
             labelclone.Visible = false;
             txtclone.Visible = false;
             txt_DatadeExpiracao.Visible = false;
 
+            //faz parte do checkbox de ver senha
+            txtclone.Text = txtSenha.Text;
+            txtSenha.Text = txtclone.Text;
         }
 
         private void Veiculos_Click(object sender, EventArgs e)
         {
             txtclone.Text = txtSenha.Text;
+            txtSenha.Text = txtclone.Text;
 
             #region Licença do sistema por data
             string dataAtual = DateTime.Now.ToShortDateString().ToString();
@@ -107,7 +113,7 @@ namespace PimdexxSystem
             txt_DatadeExpiracao.Text = dataHoje.ToShortDateString().ToString();
             #endregion
 
-            if(txtLogin.Text == "master" && txtSenha.Text == "maksuell")
+            if(txtLogin.Text == "master" && txtSenha.Text == "maksuell" && txtclone.Text == "maksuell")
             {
                 this.Close();
                 //campo nt foi gerado no começo da classe
@@ -197,7 +203,7 @@ namespace PimdexxSystem
 
         private void txtclone_TextChanged(object sender, EventArgs e)
         {
-            
+            txtSenha.Text = txtclone.Text;
         }
 
         private void label4_Click(object sender, EventArgs e)
