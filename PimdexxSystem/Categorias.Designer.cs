@@ -103,7 +103,7 @@
             this.sEQCATEGORIADataGridViewTextBoxColumn.Name = "sEQCATEGORIADataGridViewTextBoxColumn";
             this.sEQCATEGORIADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // BtnExcluir
+            // btnExcluir
             // 
             this.BtnExcluir.BackColor = System.Drawing.Color.Red;
             this.BtnExcluir.Enabled = false;
@@ -112,17 +112,17 @@
             this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExcluir.ForeColor = System.Drawing.Color.White;
-            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
+            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnExcluir.Location = new System.Drawing.Point(511, 12);
-            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Name = "btnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(144, 51);
             this.BtnExcluir.TabIndex = 130;
             this.BtnExcluir.Text = "Excluir";
             this.BtnExcluir.UseVisualStyleBackColor = false;
             this.BtnExcluir.Click += new System.EventHandler(this.button2_Click);
             // 
-            // BtnLimpar
+            // btnLimpar
             // 
             this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -131,10 +131,10 @@
             this.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLimpar.ForeColor = System.Drawing.Color.White;
-            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("BtnLimpar.Image")));
+            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
             this.BtnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnLimpar.Location = new System.Drawing.Point(356, 12);
-            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Name = "btnLimpar";
             this.BtnLimpar.Size = new System.Drawing.Size(144, 51);
             this.BtnLimpar.TabIndex = 131;
             this.BtnLimpar.Text = "Limpar ";
@@ -160,7 +160,7 @@
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Click += new System.EventHandler(this.button5_Click);
             // 
-            // BtnPesquisar
+            // btnPesquisar
             // 
             this.BtnPesquisar.BackColor = System.Drawing.Color.Firebrick;
             this.BtnPesquisar.Enabled = false;
@@ -169,10 +169,10 @@
             this.BtnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPesquisar.ForeColor = System.Drawing.Color.White;
-            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPesquisar.Image")));
+            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.BtnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPesquisar.Location = new System.Drawing.Point(48, 12);
-            this.BtnPesquisar.Name = "BtnPesquisar";
+            this.BtnPesquisar.Name = "btnPesquisar";
             this.BtnPesquisar.Size = new System.Drawing.Size(144, 51);
             this.BtnPesquisar.TabIndex = 133;
             this.BtnPesquisar.Text = "Pesquisar";
