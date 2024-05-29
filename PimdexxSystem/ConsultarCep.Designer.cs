@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,12 +45,12 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtCEP
+            // txtCep
             // 
-            this.txtCEP.Location = new System.Drawing.Point(12, 56);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(177, 20);
-            this.txtCEP.TabIndex = 0;
+            this.txtCep.Location = new System.Drawing.Point(12, 56);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(177, 20);
+            this.txtCep.TabIndex = 0;
             // 
             // label1
             // 
@@ -156,7 +156,7 @@
             this.btnLimpar.TabIndex = 10;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.Click += new System.EventHandler(this.EventoLimparClick);
             // 
             // btnSair
             // 
@@ -166,7 +166,7 @@
             this.btnSair.TabIndex = 11;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnSair.Click += new System.EventHandler(this.EventoSairClick);
             // 
             // button3
             // 
@@ -178,7 +178,7 @@
             this.button3.Size = new System.Drawing.Size(262, 64);
             this.button3.TabIndex = 12;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.EventoConsultarCepClick);
             // 
             // ConsultarCep
             // 
@@ -188,7 +188,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtCEP);
+            this.Controls.Add(this.txtCep);
             this.MaximizeBox = false;
             this.Name = "ConsultarCep";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -202,7 +202,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSair;
