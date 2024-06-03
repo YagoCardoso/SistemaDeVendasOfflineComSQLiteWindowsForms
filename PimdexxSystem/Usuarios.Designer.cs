@@ -182,63 +182,63 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // txt_NomeCompleto
+            // txtNome
             // 
             this.txt_NomeCompleto.Location = new System.Drawing.Point(2, 129);
             this.txt_NomeCompleto.Multiline = true;
-            this.txt_NomeCompleto.Name = "txt_NomeCompleto";
+            this.txt_NomeCompleto.Name = "txtNome";
             this.txt_NomeCompleto.Size = new System.Drawing.Size(370, 20);
             this.txt_NomeCompleto.TabIndex = 144;
             // 
-            // txt_Endereco
+            // txtEndereco
             // 
             this.txt_Endereco.Location = new System.Drawing.Point(309, 168);
-            this.txt_Endereco.Name = "txt_Endereco";
+            this.txt_Endereco.Name = "txtEndereco";
             this.txt_Endereco.Size = new System.Drawing.Size(260, 20);
             this.txt_Endereco.TabIndex = 145;
             // 
-            // txt_Bairro
+            // txtBairro
             // 
             this.txt_Bairro.Location = new System.Drawing.Point(575, 168);
-            this.txt_Bairro.Name = "txt_Bairro";
+            this.txt_Bairro.Name = "txtBairro";
             this.txt_Bairro.Size = new System.Drawing.Size(186, 20);
             this.txt_Bairro.TabIndex = 146;
             // 
-            // txt_Cidade
+            // txtCidade
             // 
             this.txt_Cidade.Location = new System.Drawing.Point(166, 208);
             this.txt_Cidade.Multiline = true;
-            this.txt_Cidade.Name = "txt_Cidade";
+            this.txt_Cidade.Name = "txtCidade";
             this.txt_Cidade.Size = new System.Drawing.Size(201, 20);
             this.txt_Cidade.TabIndex = 147;
             // 
-            // txt_CEP
+            // txtCep
             // 
             this.txt_CEP.Location = new System.Drawing.Point(2, 208);
             this.txt_CEP.Multiline = true;
-            this.txt_CEP.Name = "txt_CEP";
+            this.txt_CEP.Name = "txtCep";
             this.txt_CEP.Size = new System.Drawing.Size(158, 20);
             this.txt_CEP.TabIndex = 148;
             // 
-            // txt_UF
+            // txtUf
             // 
             this.txt_UF.Location = new System.Drawing.Point(373, 208);
             this.txt_UF.Multiline = true;
-            this.txt_UF.Name = "txt_UF";
+            this.txt_UF.Name = "txtUf";
             this.txt_UF.Size = new System.Drawing.Size(57, 20);
             this.txt_UF.TabIndex = 149;
             // 
-            // txt_RG
+            // txtRg
             // 
             this.txt_RG.Location = new System.Drawing.Point(2, 168);
-            this.txt_RG.Name = "txt_RG";
+            this.txt_RG.Name = "txtRg";
             this.txt_RG.Size = new System.Drawing.Size(156, 20);
             this.txt_RG.TabIndex = 151;
             // 
-            // txt_Fone
+            // txtTelefone
             // 
             this.txt_Fone.Location = new System.Drawing.Point(163, 168);
-            this.txt_Fone.Name = "txt_Fone";
+            this.txt_Fone.Name = "txtTelefone";
             this.txt_Fone.Size = new System.Drawing.Size(143, 20);
             this.txt_Fone.TabIndex = 152;
             this.txt_Fone.Text = "( )";
@@ -478,10 +478,10 @@
             this.cbox_TipoUsu.Size = new System.Drawing.Size(139, 21);
             this.cbox_TipoUsu.TabIndex = 178;
             // 
-            // txt_dtNascimento
+            // txtDtNascimento
             // 
             this.txt_dtNascimento.Location = new System.Drawing.Point(378, 129);
-            this.txt_dtNascimento.Name = "txt_dtNascimento";
+            this.txt_dtNascimento.Name = "txtDtNascimento";
             this.txt_dtNascimento.Size = new System.Drawing.Size(235, 20);
             this.txt_dtNascimento.TabIndex = 179;
             // 
@@ -499,11 +499,11 @@
             this.txt_desligamento.Size = new System.Drawing.Size(234, 20);
             this.txt_desligamento.TabIndex = 181;
             // 
-            // txt_CPF
+            // txtCpf
             // 
             this.txt_CPF.Location = new System.Drawing.Point(619, 129);
             this.txt_CPF.MaxLength = 12;
-            this.txt_CPF.Name = "txt_CPF";
+            this.txt_CPF.Name = "txtCpf";
             this.txt_CPF.Size = new System.Drawing.Size(142, 20);
             this.txt_CPF.TabIndex = 183;
             this.txt_CPF.Click += new System.EventHandler(this.txt_CPF_Click);
@@ -549,13 +549,13 @@
             this.label20.TabIndex = 214;
             this.label20.Text = "Ver usuários cadastrados";
             // 
-            // LABEL_CPF
+            // labelCpf
             // 
             this.LABEL_CPF.AutoSize = true;
             this.LABEL_CPF.BackColor = System.Drawing.Color.White;
             this.LABEL_CPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LABEL_CPF.Location = new System.Drawing.Point(651, 135);
-            this.LABEL_CPF.Name = "LABEL_CPF";
+            this.LABEL_CPF.Name = "labelCpf";
             this.LABEL_CPF.Size = new System.Drawing.Size(109, 12);
             this.LABEL_CPF.TabIndex = 215;
             this.LABEL_CPF.Text = "  Digite apenas numeros..";

@@ -138,7 +138,8 @@ namespace PimdexxSystem
 
         private void btnMotorista_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Clientes());
+            //ToDo : Avaliar o comportamento após DI
+            //AbrirFormInPanel(new Clientes());
         }
 
         private void btnSeguros_Click(object sender, EventArgs e)

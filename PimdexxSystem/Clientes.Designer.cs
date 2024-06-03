@@ -29,484 +29,512 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_Fone = new System.Windows.Forms.TextBox();
-            this.txt_RG = new System.Windows.Forms.TextBox();
-            this.txt_UF = new System.Windows.Forms.TextBox();
-            this.txt_CEP = new System.Windows.Forms.TextBox();
-            this.txt_Cidade = new System.Windows.Forms.TextBox();
-            this.txt_Bairro = new System.Windows.Forms.TextBox();
-            this.txt_Endereco = new System.Windows.Forms.TextBox();
-            this.txt_NomeCompleto = new System.Windows.Forms.TextBox();
-            this.BtnPesquisar = new System.Windows.Forms.Button();
-            this.BtnAlterar = new System.Windows.Forms.Button();
-            this.BtnLimpar = new System.Windows.Forms.Button();
-            this.BtnExcluir = new System.Windows.Forms.Button();
-            this.BtnInserir = new System.Windows.Forms.Button();
-            this.txt_dtNascimento = new System.Windows.Forms.DateTimePicker();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.pnDadosPessoais = new System.Windows.Forms.Panel();
+            this.lblDadosPessoais = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblEndereco = new System.Windows.Forms.Label();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.lblCep = new System.Windows.Forms.Label();
+            this.lblUf = new System.Windows.Forms.Label();
+            this.lblCpf = new System.Windows.Forms.Label();
+            this.lblRg = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
+            this.txtUf = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnInserir = new System.Windows.Forms.Button();
+            this.txtDtNascimento = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_CPF = new System.Windows.Forms.TextBox();
-            this.LABEL_CPF = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblVerClientesCadastrados = new System.Windows.Forms.Label();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.labelCpf = new System.Windows.Forms.Label();
+            this.pnEndereco = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.pctboxCep = new System.Windows.Forms.PictureBox();
+            this.pnDadosPessoais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnEndereco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctboxCep)).BeginInit();
             this.SuspendLayout();
             // 
-            // label17
+            // lblDataNascimento
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(439, 113);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 14);
-            this.label17.TabIndex = 208;
-            this.label17.Text = "Data de nascimento";
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNascimento.Location = new System.Drawing.Point(658, 174);
+            this.lblDataNascimento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(186, 21);
+            this.lblDataNascimento.TabIndex = 208;
+            this.lblDataNascimento.Text = "Data de nascimento";
             // 
-            // panel1
+            // pnDadosPessoais
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Location = new System.Drawing.Point(0, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 23);
-            this.panel1.TabIndex = 206;
+            this.pnDadosPessoais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pnDadosPessoais.Controls.Add(this.lblDadosPessoais);
+            this.pnDadosPessoais.Location = new System.Drawing.Point(0, 120);
+            this.pnDadosPessoais.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnDadosPessoais.Name = "pnDadosPessoais";
+            this.pnDadosPessoais.Size = new System.Drawing.Size(300, 35);
+            this.pnDadosPessoais.TabIndex = 206;
             // 
-            // label13
+            // lblDadosPessoais
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(33, 5);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 14);
-            this.label13.TabIndex = 170;
-            this.label13.Text = "Dados Pessoais";
+            this.lblDadosPessoais.AutoSize = true;
+            this.lblDadosPessoais.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDadosPessoais.ForeColor = System.Drawing.Color.White;
+            this.lblDadosPessoais.Location = new System.Drawing.Point(50, 8);
+            this.lblDadosPessoais.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDadosPessoais.Name = "lblDadosPessoais";
+            this.lblDadosPessoais.Size = new System.Drawing.Size(151, 21);
+            this.lblDadosPessoais.TabIndex = 170;
+            this.lblDadosPessoais.Text = "Dados Pessoais";
             // 
-            // label10
+            // lblTelefone
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(341, 160);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 14);
-            this.label10.TabIndex = 203;
-            this.label10.Text = "Fone";
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(512, 246);
+            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(54, 21);
+            this.lblTelefone.TabIndex = 203;
+            this.lblTelefone.Text = "Fone";
             // 
-            // label8
+            // lblEndereco
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 276);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 14);
-            this.label8.TabIndex = 201;
-            this.label8.Text = "Endereço";
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Location = new System.Drawing.Point(8, 425);
+            this.lblEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(96, 21);
+            this.lblEndereco.TabIndex = 201;
+            this.lblEndereco.Text = "Endereço";
             // 
-            // label7
+            // lblBairro
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(268, 275);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 14);
-            this.label7.TabIndex = 200;
-            this.label7.Text = "Bairro";
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(402, 423);
+            this.lblBairro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(66, 21);
+            this.lblBairro.TabIndex = 200;
+            this.lblBairro.Text = "Bairro";
             // 
-            // label6
+            // lblCidade
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(411, 276);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 14);
-            this.label6.TabIndex = 199;
-            this.label6.Text = "Cidade";
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Location = new System.Drawing.Point(616, 425);
+            this.lblCidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(72, 21);
+            this.lblCidade.TabIndex = 199;
+            this.lblCidade.Text = "Cidade";
             // 
-            // label5
+            // lblCep
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 314);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 14);
-            this.label5.TabIndex = 198;
-            this.label5.Text = "CEP";
+            this.lblCep.AutoSize = true;
+            this.lblCep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Location = new System.Drawing.Point(8, 483);
+            this.lblCep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCep.Name = "lblCep";
+            this.lblCep.Size = new System.Drawing.Size(47, 21);
+            this.lblCep.TabIndex = 198;
+            this.lblCep.Text = "CEP";
             // 
-            // label4
+            // lblUf
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(179, 315);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 14);
-            this.label4.TabIndex = 197;
-            this.label4.Text = "UF";
+            this.lblUf.AutoSize = true;
+            this.lblUf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUf.Location = new System.Drawing.Point(268, 485);
+            this.lblUf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUf.Name = "lblUf";
+            this.lblUf.Size = new System.Drawing.Size(35, 21);
+            this.lblUf.TabIndex = 197;
+            this.lblUf.Text = "UF";
             // 
-            // label3
+            // lblCpf
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 14);
-            this.label3.TabIndex = 196;
-            this.label3.Text = "CPF*";
+            this.lblCpf.AutoSize = true;
+            this.lblCpf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.Location = new System.Drawing.Point(14, 249);
+            this.lblCpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCpf.Name = "lblCpf";
+            this.lblCpf.Size = new System.Drawing.Size(54, 21);
+            this.lblCpf.TabIndex = 196;
+            this.lblCpf.Text = "CPF*";
             // 
-            // label2
+            // lblRg
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(179, 162);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 14);
-            this.label2.TabIndex = 195;
-            this.label2.Text = "RG*";
+            this.lblRg.AutoSize = true;
+            this.lblRg.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRg.Location = new System.Drawing.Point(268, 249);
+            this.lblRg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRg.Name = "lblRg";
+            this.lblRg.Size = new System.Drawing.Size(45, 21);
+            this.lblRg.TabIndex = 195;
+            this.lblRg.Text = "RG*";
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 14);
-            this.label1.TabIndex = 194;
-            this.label1.Text = "Nome Completo*";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(18, 174);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(159, 21);
+            this.lblNome.TabIndex = 194;
+            this.lblNome.Text = "Nome Completo*";
             // 
-            // txt_Fone
+            // txtTelefone
             // 
-            this.txt_Fone.Location = new System.Drawing.Point(341, 177);
-            this.txt_Fone.Name = "txt_Fone";
-            this.txt_Fone.Size = new System.Drawing.Size(143, 20);
-            this.txt_Fone.TabIndex = 191;
-            this.txt_Fone.Text = "( )";
+            this.txtTelefone.Location = new System.Drawing.Point(512, 272);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(212, 26);
+            this.txtTelefone.TabIndex = 191;
+            this.txtTelefone.Text = "( )";
             // 
-            // txt_RG
+            // txtRg
             // 
-            this.txt_RG.Location = new System.Drawing.Point(179, 177);
-            this.txt_RG.Name = "txt_RG";
-            this.txt_RG.Size = new System.Drawing.Size(156, 20);
-            this.txt_RG.TabIndex = 190;
+            this.txtRg.Location = new System.Drawing.Point(268, 272);
+            this.txtRg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(232, 26);
+            this.txtRg.TabIndex = 190;
             // 
-            // txt_UF
+            // txtUf
             // 
-            this.txt_UF.Location = new System.Drawing.Point(182, 330);
-            this.txt_UF.Multiline = true;
-            this.txt_UF.Name = "txt_UF";
-            this.txt_UF.Size = new System.Drawing.Size(57, 23);
-            this.txt_UF.TabIndex = 188;
+            this.txtUf.Location = new System.Drawing.Point(273, 508);
+            this.txtUf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUf.Multiline = true;
+            this.txtUf.Name = "txtUf";
+            this.txtUf.Size = new System.Drawing.Size(84, 33);
+            this.txtUf.TabIndex = 188;
             // 
-            // txt_CEP
+            // txtCep
             // 
-            this.txt_CEP.Location = new System.Drawing.Point(5, 330);
-            this.txt_CEP.Multiline = true;
-            this.txt_CEP.Name = "txt_CEP";
-            this.txt_CEP.Size = new System.Drawing.Size(158, 23);
-            this.txt_CEP.TabIndex = 187;
+            this.txtCep.Location = new System.Drawing.Point(8, 508);
+            this.txtCep.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCep.Multiline = true;
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(235, 33);
+            this.txtCep.TabIndex = 187;
             // 
-            // txt_Cidade
+            // txtCidade
             // 
-            this.txt_Cidade.Location = new System.Drawing.Point(414, 291);
-            this.txt_Cidade.Name = "txt_Cidade";
-            this.txt_Cidade.Size = new System.Drawing.Size(166, 20);
-            this.txt_Cidade.TabIndex = 186;
+            this.txtCidade.Location = new System.Drawing.Point(621, 448);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(247, 26);
+            this.txtCidade.TabIndex = 186;
             // 
-            // txt_Bairro
+            // txtBairro
             // 
-            this.txt_Bairro.Location = new System.Drawing.Point(271, 291);
-            this.txt_Bairro.Name = "txt_Bairro";
-            this.txt_Bairro.Size = new System.Drawing.Size(134, 20);
-            this.txt_Bairro.TabIndex = 185;
+            this.txtBairro.Location = new System.Drawing.Point(406, 448);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(199, 26);
+            this.txtBairro.TabIndex = 185;
             // 
-            // txt_Endereco
+            // txtEndereco
             // 
-            this.txt_Endereco.Location = new System.Drawing.Point(5, 291);
-            this.txt_Endereco.Name = "txt_Endereco";
-            this.txt_Endereco.Size = new System.Drawing.Size(260, 20);
-            this.txt_Endereco.TabIndex = 184;
+            this.txtEndereco.Location = new System.Drawing.Point(8, 448);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(388, 26);
+            this.txtEndereco.TabIndex = 184;
             // 
-            // txt_NomeCompleto
+            // txtNome
             // 
-            this.txt_NomeCompleto.Location = new System.Drawing.Point(12, 129);
-            this.txt_NomeCompleto.Multiline = true;
-            this.txt_NomeCompleto.Name = "txt_NomeCompleto";
-            this.txt_NomeCompleto.Size = new System.Drawing.Size(422, 20);
-            this.txt_NomeCompleto.TabIndex = 183;
+            this.txtNome.Location = new System.Drawing.Point(18, 198);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(631, 29);
+            this.txtNome.TabIndex = 183;
             // 
-            // BtnPesquisar
+            // btnPesquisar
             // 
-            this.BtnPesquisar.BackColor = System.Drawing.Color.Firebrick;
-            this.BtnPesquisar.FlatAppearance.BorderSize = 0;
-            this.BtnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPesquisar.ForeColor = System.Drawing.Color.White;
-            this.BtnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("BtnPesquisar.Image")));
-            this.BtnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPesquisar.Location = new System.Drawing.Point(60, 12);
-            this.BtnPesquisar.Name = "BtnPesquisar";
-            this.BtnPesquisar.Size = new System.Drawing.Size(144, 47);
-            this.BtnPesquisar.TabIndex = 182;
-            this.BtnPesquisar.Text = "Pesquisar";
-            this.BtnPesquisar.UseVisualStyleBackColor = false;
-            this.BtnPesquisar.Click += new System.EventHandler(this.button4_Click);
+            this.btnPesquisar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+            this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisar.Location = new System.Drawing.Point(90, 18);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(216, 72);
+            this.btnPesquisar.TabIndex = 182;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.EventoClickPesquisar);
             // 
-            // BtnAlterar
+            // btnAlterar
             // 
-            this.BtnAlterar.BackColor = System.Drawing.Color.Orange;
-            this.BtnAlterar.FlatAppearance.BorderSize = 0;
-            this.BtnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAlterar.ForeColor = System.Drawing.Color.White;
-            this.BtnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAlterar.Image")));
-            this.BtnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAlterar.Location = new System.Drawing.Point(213, 12);
-            this.BtnAlterar.Name = "BtnAlterar";
-            this.BtnAlterar.Size = new System.Drawing.Size(144, 47);
-            this.BtnAlterar.TabIndex = 181;
-            this.BtnAlterar.Text = "Alterar";
-            this.BtnAlterar.UseVisualStyleBackColor = false;
-            this.BtnAlterar.Click += new System.EventHandler(this.button6_Click);
+            this.btnAlterar.BackColor = System.Drawing.Color.Orange;
+            this.btnAlterar.FlatAppearance.BorderSize = 0;
+            this.btnAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.ForeColor = System.Drawing.Color.White;
+            this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlterar.Location = new System.Drawing.Point(320, 18);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(216, 72);
+            this.btnAlterar.TabIndex = 181;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.EventoClickAlterar);
             // 
-            // BtnLimpar
+            // btnLimpar
             // 
-            this.BtnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLimpar.FlatAppearance.BorderSize = 0;
-            this.BtnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLimpar.ForeColor = System.Drawing.Color.White;
-            this.BtnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("BtnLimpar.Image")));
-            this.BtnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLimpar.Location = new System.Drawing.Point(368, 12);
-            this.BtnLimpar.Name = "BtnLimpar";
-            this.BtnLimpar.Size = new System.Drawing.Size(144, 47);
-            this.BtnLimpar.TabIndex = 180;
-            this.BtnLimpar.Text = "Limpar ";
-            this.BtnLimpar.UseVisualStyleBackColor = false;
-            this.BtnLimpar.Click += new System.EventHandler(this.button7_Click);
+            this.btnLimpar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpar.Location = new System.Drawing.Point(552, 18);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(216, 72);
+            this.btnLimpar.TabIndex = 180;
+            this.btnLimpar.Text = "Limpar ";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.EventoClickLimpar);
             // 
-            // BtnExcluir
+            // btnExcluir
             // 
-            this.BtnExcluir.BackColor = System.Drawing.Color.Red;
-            this.BtnExcluir.FlatAppearance.BorderSize = 0;
-            this.BtnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExcluir.ForeColor = System.Drawing.Color.White;
-            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
-            this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnExcluir.Location = new System.Drawing.Point(523, 12);
-            this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(144, 47);
-            this.BtnExcluir.TabIndex = 179;
-            this.BtnExcluir.Text = "Excluir";
-            this.BtnExcluir.UseVisualStyleBackColor = false;
-            this.BtnExcluir.Click += new System.EventHandler(this.button8_Click);
+            this.btnExcluir.BackColor = System.Drawing.Color.Red;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(784, 18);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(216, 72);
+            this.btnExcluir.TabIndex = 179;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.EventoClickExcluir);
             // 
-            // BtnInserir
+            // btnInserir
             // 
-            this.BtnInserir.BackColor = System.Drawing.Color.LimeGreen;
-            this.BtnInserir.FlatAppearance.BorderSize = 0;
-            this.BtnInserir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnInserir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnInserir.ForeColor = System.Drawing.Color.White;
-            this.BtnInserir.Image = ((System.Drawing.Image)(resources.GetObject("BtnInserir.Image")));
-            this.BtnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnInserir.Location = new System.Drawing.Point(12, 384);
-            this.BtnInserir.Name = "BtnInserir";
-            this.BtnInserir.Size = new System.Drawing.Size(138, 39);
-            this.BtnInserir.TabIndex = 209;
-            this.BtnInserir.Text = "Inserir Novo";
-            this.BtnInserir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnInserir.UseVisualStyleBackColor = false;
-            this.BtnInserir.Click += new System.EventHandler(this.button1_Click);
+            this.btnInserir.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnInserir.FlatAppearance.BorderSize = 0;
+            this.btnInserir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInserir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserir.ForeColor = System.Drawing.Color.White;
+            this.btnInserir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInserir.Location = new System.Drawing.Point(18, 591);
+            this.btnInserir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(207, 60);
+            this.btnInserir.TabIndex = 209;
+            this.btnInserir.Text = "Inserir Novo";
+            this.btnInserir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInserir.UseVisualStyleBackColor = false;
+            this.btnInserir.Click += new System.EventHandler(this.EventoClickInserir);
             // 
-            // txt_dtNascimento
+            // txtDtNascimento
             // 
-            this.txt_dtNascimento.Location = new System.Drawing.Point(443, 130);
-            this.txt_dtNascimento.Name = "txt_dtNascimento";
-            this.txt_dtNascimento.Size = new System.Drawing.Size(228, 20);
-            this.txt_dtNascimento.TabIndex = 210;
+            this.txtDtNascimento.Location = new System.Drawing.Point(664, 200);
+            this.txtDtNascimento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDtNascimento.Name = "txtDtNascimento";
+            this.txtDtNascimento.Size = new System.Drawing.Size(340, 26);
+            this.txtDtNascimento.TabIndex = 210;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(598, 354);
+            this.pictureBox1.Location = new System.Drawing.Point(897, 545);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(118, 106);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 212;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label9
+            // lblVerClientesCadastrados
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(552, 337);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 14);
-            this.label9.TabIndex = 213;
-            this.label9.Text = "Ver Clientes Cadastrados";
+            this.lblVerClientesCadastrados.AutoSize = true;
+            this.lblVerClientesCadastrados.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVerClientesCadastrados.Location = new System.Drawing.Point(828, 518);
+            this.lblVerClientesCadastrados.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVerClientesCadastrados.Name = "lblVerClientesCadastrados";
+            this.lblVerClientesCadastrados.Size = new System.Drawing.Size(236, 21);
+            this.lblVerClientesCadastrados.TabIndex = 213;
+            this.lblVerClientesCadastrados.Text = "Ver Clientes Cadastrados";
             // 
-            // txt_CPF
+            // txtCpf
             // 
-            this.txt_CPF.Location = new System.Drawing.Point(12, 179);
-            this.txt_CPF.Name = "txt_CPF";
-            this.txt_CPF.Size = new System.Drawing.Size(156, 20);
-            this.txt_CPF.TabIndex = 214;
-            this.txt_CPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_CPF.Click += new System.EventHandler(this.txt_CPF_Click_1);
+            this.txtCpf.Location = new System.Drawing.Point(18, 275);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(232, 26);
+            this.txtCpf.TabIndex = 214;
+            this.txtCpf.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCpf.Click += new System.EventHandler(this.EventoClickTxtCpf);
             // 
-            // LABEL_CPF
+            // labelCpf
             // 
-            this.LABEL_CPF.AutoSize = true;
-            this.LABEL_CPF.BackColor = System.Drawing.Color.White;
-            this.LABEL_CPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LABEL_CPF.Location = new System.Drawing.Point(55, 184);
-            this.LABEL_CPF.Name = "LABEL_CPF";
-            this.LABEL_CPF.Size = new System.Drawing.Size(109, 12);
-            this.LABEL_CPF.TabIndex = 216;
-            this.LABEL_CPF.Text = "  Digite apenas numeros..";
-            this.LABEL_CPF.Click += new System.EventHandler(this.LABEL_CPF_Click);
+            this.labelCpf.AutoSize = true;
+            this.labelCpf.BackColor = System.Drawing.Color.White;
+            this.labelCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCpf.Location = new System.Drawing.Point(31, 280);
+            this.labelCpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCpf.Name = "labelCpf";
+            this.labelCpf.Size = new System.Drawing.Size(170, 17);
+            this.labelCpf.TabIndex = 216;
+            this.labelCpf.Text = "  Digite apenas numeros..";
+            this.labelCpf.Click += new System.EventHandler(this.EventoCpfClick);
             // 
-            // panel2
+            // pnEndereco
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(0, 250);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 23);
-            this.panel2.TabIndex = 207;
+            this.pnEndereco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pnEndereco.Controls.Add(this.label11);
+            this.pnEndereco.Location = new System.Drawing.Point(0, 385);
+            this.pnEndereco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnEndereco.Name = "pnEndereco";
+            this.pnEndereco.Size = new System.Drawing.Size(300, 35);
+            this.pnEndereco.TabIndex = 207;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(1, 5);
+            this.label11.Location = new System.Drawing.Point(2, 8);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 14);
+            this.label11.Size = new System.Drawing.Size(96, 21);
             this.label11.TabIndex = 170;
             this.label11.Text = "Endereço";
             // 
-            // pictureBox2
+            // pctboxCep
             // 
-            this.pictureBox2.AccessibleName = "";
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(137, 331);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 217;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pctboxCep.AccessibleName = "";
+            this.pctboxCep.BackColor = System.Drawing.Color.White;
+            this.pctboxCep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctboxCep.Image = ((System.Drawing.Image)(resources.GetObject("pctboxCep.Image")));
+            this.pctboxCep.Location = new System.Drawing.Point(206, 509);
+            this.pctboxCep.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pctboxCep.Name = "pctboxCep";
+            this.pctboxCep.Size = new System.Drawing.Size(38, 32);
+            this.pctboxCep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctboxCep.TabIndex = 217;
+            this.pctboxCep.TabStop = false;
+            this.pctboxCep.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Clientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(984, 461);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.LABEL_CPF);
-            this.Controls.Add(this.txt_CPF);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(1476, 709);
+            this.Controls.Add(this.pctboxCep);
+            this.Controls.Add(this.pnEndereco);
+            this.Controls.Add(this.labelCpf);
+            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.lblVerClientesCadastrados);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt_dtNascimento);
-            this.Controls.Add(this.BtnInserir);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_Fone);
-            this.Controls.Add(this.txt_RG);
-            this.Controls.Add(this.txt_UF);
-            this.Controls.Add(this.txt_CEP);
-            this.Controls.Add(this.txt_Cidade);
-            this.Controls.Add(this.txt_Bairro);
-            this.Controls.Add(this.txt_Endereco);
-            this.Controls.Add(this.txt_NomeCompleto);
-            this.Controls.Add(this.BtnPesquisar);
-            this.Controls.Add(this.BtnAlterar);
-            this.Controls.Add(this.BtnLimpar);
-            this.Controls.Add(this.BtnExcluir);
+            this.Controls.Add(this.txtDtNascimento);
+            this.Controls.Add(this.btnInserir);
+            this.Controls.Add(this.lblDataNascimento);
+            this.Controls.Add(this.pnDadosPessoais);
+            this.Controls.Add(this.lblTelefone);
+            this.Controls.Add(this.lblEndereco);
+            this.Controls.Add(this.lblBairro);
+            this.Controls.Add(this.lblCidade);
+            this.Controls.Add(this.lblCep);
+            this.Controls.Add(this.lblUf);
+            this.Controls.Add(this.lblCpf);
+            this.Controls.Add(this.lblRg);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtRg);
+            this.Controls.Add(this.txtUf);
+            this.Controls.Add(this.txtCep);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnExcluir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Clientes";
             this.Text = "Clientes";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnDadosPessoais.ResumeLayout(false);
+            this.pnDadosPessoais.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnEndereco.ResumeLayout(false);
+            this.pnEndereco.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctboxCep)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_Fone;
-        private System.Windows.Forms.TextBox txt_RG;
-        private System.Windows.Forms.TextBox txt_UF;
-        private System.Windows.Forms.TextBox txt_CEP;
-        private System.Windows.Forms.TextBox txt_Cidade;
-        private System.Windows.Forms.TextBox txt_Bairro;
-        private System.Windows.Forms.TextBox txt_Endereco;
-        private System.Windows.Forms.TextBox txt_NomeCompleto;
-        private System.Windows.Forms.Button BtnPesquisar;
-        private System.Windows.Forms.Button BtnAlterar;
-        private System.Windows.Forms.Button BtnLimpar;
-        private System.Windows.Forms.Button BtnExcluir;
-        private System.Windows.Forms.Button BtnInserir;
-        private System.Windows.Forms.DateTimePicker txt_dtNascimento;
+        private System.Windows.Forms.Label lblDataNascimento;
+        private System.Windows.Forms.Panel pnDadosPessoais;
+        private System.Windows.Forms.Label lblDadosPessoais;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Label lblEndereco;
+        private System.Windows.Forms.Label lblBairro;
+        private System.Windows.Forms.Label lblCidade;
+        private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Label lblUf;
+        private System.Windows.Forms.Label lblCpf;
+        private System.Windows.Forms.Label lblRg;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.TextBox txtRg;
+        private System.Windows.Forms.TextBox txtUf;
+        private System.Windows.Forms.TextBox txtCep;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnInserir;
+        private System.Windows.Forms.DateTimePicker txtDtNascimento;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_CPF;
-        private System.Windows.Forms.Label LABEL_CPF;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblVerClientesCadastrados;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.Label labelCpf;
+        private System.Windows.Forms.Panel pnEndereco;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pctboxCep;
     }
 }
