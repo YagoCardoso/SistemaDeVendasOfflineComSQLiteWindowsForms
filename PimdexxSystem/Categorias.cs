@@ -256,7 +256,7 @@ namespace PimdexxSystem
             Microsoft.Office.Interop.Excel.Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel.Worksheet worksheet = null;
            // worksheet = workbook.Sheets["novo"];
-            worksheet = workbook.ActiveSheet;
+            worksheet = (Microsoft.Office.Interop.Excel.Worksheet) workbook.ActiveSheet;
             worksheet.Name = "CustomerDetail";
 
             for (int i = 1; i< dataGridView1.Columns.Count+1; i++)
@@ -295,7 +295,7 @@ namespace PimdexxSystem
             Microsoft.Office.Interop.Excel.Workbook workbook = app.Workbooks.Add(Type.Missing);
             Microsoft.Office.Interop.Excel.Worksheet worksheet = null;
             // worksheet = workbook.Sheets["novo"];
-            worksheet = workbook.ActiveSheet;
+            worksheet = (Microsoft.Office.Interop.Excel.Worksheet) workbook.ActiveSheet;
             worksheet.Name = "CustomerDetail";
 
             for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)

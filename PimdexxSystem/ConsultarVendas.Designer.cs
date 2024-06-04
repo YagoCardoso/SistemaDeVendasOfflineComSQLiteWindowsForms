@@ -157,7 +157,7 @@
             // 
             this.vENDATableAdapter1.ClearBeforeFill = true;
             // 
-            // BtnExcluir
+            // btnExcluir
             // 
             this.BtnExcluir.BackColor = System.Drawing.Color.Red;
             this.BtnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -166,10 +166,10 @@
             this.BtnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExcluir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExcluir.ForeColor = System.Drawing.Color.White;
-            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcluir.Image")));
+            this.BtnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.BtnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnExcluir.Location = new System.Drawing.Point(558, 41);
-            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Name = "btnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(144, 36);
             this.BtnExcluir.TabIndex = 131;
             this.BtnExcluir.Text = "Excluir";
