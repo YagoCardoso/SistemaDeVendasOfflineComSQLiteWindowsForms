@@ -311,7 +311,7 @@ namespace PimdexxSystem
         {
           //  table.Rows.Add(txt_codProduto.Text, txt_descricao.Text, txt_categoria.Text, txt_ValorUND, txt_QTDE.Text, TXT_TOTALCARRINHO.Text, txt_cliente.Text, txt_pagamento.Text, );
 
-            //"Cliente", 
+            //"Pessoa", 
             //"Forma de P
             //"Desconto",
             //"Total Vend

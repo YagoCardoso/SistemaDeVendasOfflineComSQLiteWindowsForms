@@ -1,5 +1,7 @@
 ﻿using Pdv.Application;
+using Pdv.Domain.Entidades;
 using Pdv.Domain.Entidades.Funcionario;
+using Pdv.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,22 +57,29 @@ namespace PimdexxSystem
             SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
             SqlCommand command = new SqlCommand("insert into USUARIO(CPF, NOME, DTNASCIMENTO, ENDERECO, BAIRRO, CIDADE, CEP, UF, RG, FONE, SALARIO, TIPOUSU, DTADMISSAO, DTDESLIGAMENTO, USUARIO, SENHA ) values (@varCpf, @varNome, @varDTnascimento, @varEndereco, @varBairro, @varCidade, @varCep, @varUF, @varRG, @varFone, @varSalario, @varTipousu, @varDTadmissao, @varDTdesligamento, @varUsuario, @varSenha)", sql);
 
-            var funcionario = new Funcionario(
+            /*var funcionario = new Funcionario(
                 txtNome.Text,
                 txtCpf.Text,
                 txtRg.Text,
                 txtTelefone.Text,
                 Convert.ToDateTime(txtDataNascimento.Text),
-                new Endereco,
+                new Endereco
+                {
+                    Rua = txtRua.Text,
+                    Bairro = txtBairro.Text,
+                    Cidade = txtCidade.Text,
+                    CodigoCep = txtCidade.Text,
+                    Uf = (Uf)Enum.Parse(typeof(Uf), txtUf.Text, true)
+                },
                 new ContaAcesso
                 {
                     Usuario = txtUsuario.Text,
                     Senha = txtSenha.Text
                 },
                 Convert.ToDecimal(txtSalario.Text)
-                );
+                );*/
 
-            command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = ;
+            //command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = ;
             command.Parameters.Add("@varNome", SqlDbType.NVarChar).Value = txtNome.Text;
             command.Parameters.Add("@varDTnascimento", SqlDbType.DateTime).Value = txtDataNascimento.Text;
             command.Parameters.Add("@varEndereco", SqlDbType.NVarChar).Value = txtRua.Text;
