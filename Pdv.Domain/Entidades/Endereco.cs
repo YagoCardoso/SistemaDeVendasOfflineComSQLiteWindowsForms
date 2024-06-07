@@ -1,19 +1,23 @@
-﻿namespace Pdv.Domain.Entidades
+﻿using System;
+using Pdv.Domain.Enums;
+
+namespace Pdv.Domain.Entidades
 {
     public class Endereco
     {
+        public Guid Id { get; set; } = new Guid();
         public string Rua { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
         public string CodigoCep { get; set; }
-        public string Uf { get; set; }
+        public Uf Uf { get; set; }
 
         public Endereco(
             string rua, 
             string bairro,
             string cidade,
             string codigoCep,
-            string uf
+            Uf uf
         ) 
         {
             Rua = rua;

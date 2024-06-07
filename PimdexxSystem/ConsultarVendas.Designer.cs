@@ -110,7 +110,7 @@
             // cLIENTEDataGridViewTextBoxColumn
             // 
             this.cLIENTEDataGridViewTextBoxColumn.DataPropertyName = "CLIENTE";
-            this.cLIENTEDataGridViewTextBoxColumn.HeaderText = "Cliente";
+            this.cLIENTEDataGridViewTextBoxColumn.HeaderText = "Pessoa";
             this.cLIENTEDataGridViewTextBoxColumn.Name = "cLIENTEDataGridViewTextBoxColumn";
             // 
             // tPPAGAMENTODataGridViewTextBoxColumn

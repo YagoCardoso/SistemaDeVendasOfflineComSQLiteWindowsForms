@@ -6,7 +6,7 @@ namespace Pdv.Domain.Repositories
     {
         void InserirCliente(Cliente cliente);
         void AlterarCliente(Cliente cliente);
-        Cliente ObterCliente(string cpf);        
+        Cliente ObterCliente(string cpf);
         void DeleteCliente(string cpf);
     }
 }

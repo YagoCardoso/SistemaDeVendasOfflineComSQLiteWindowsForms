@@ -181,7 +181,7 @@
             this.uFDataGridViewTextBoxColumn.HeaderText = "UF";
             this.uFDataGridViewTextBoxColumn.Name = "uFDataGridViewTextBoxColumn";
             // 
-            // uSUARIOBindingSource
+            // UsuarioBindingSource
             // 
             this.uSUARIOBindingSource.DataMember = "USUARIO";
             this.uSUARIOBindingSource.DataSource = this.systemOrangeDataSet12;
@@ -191,7 +191,7 @@
             this.systemOrangeDataSet12.DataSetName = "SystemOrangeDataSet12";
             this.systemOrangeDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // uSUARIOTableAdapter
+            // UsuarioTableAdapter
             // 
             this.uSUARIOTableAdapter.ClearBeforeFill = true;
             // 
