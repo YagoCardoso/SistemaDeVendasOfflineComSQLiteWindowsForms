@@ -15,7 +15,6 @@ namespace PimdexxSystem
 {
     public partial class Principal : Form
     {
-
         private readonly FuncionarioService _funcionarioService;
 
         public Principal(FuncionarioService funcionarioService)
@@ -23,7 +22,6 @@ namespace PimdexxSystem
             InitializeComponent();
             this._funcionarioService = funcionarioService;
         }
-        
 
         private void Fechar_Click(object sender, EventArgs e)
         {
