@@ -1,7 +1,4 @@
 ﻿using Pdv.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Pdv.Domain.Entidades.Funcionario
 {
