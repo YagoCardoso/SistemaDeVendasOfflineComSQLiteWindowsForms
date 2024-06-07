@@ -13,6 +13,7 @@ using validaocampos;
 using Pdv.Domain.Entidades;
 using Pdv.Domain.Services;
 using Pdv.Application;
+using Pdv.Domain.Enums;
 
 namespace PimdexxSystem
 {
@@ -35,14 +36,14 @@ namespace PimdexxSystem
             txtBairro.Text = cliente.Endereco.Bairro;
             txtCidade.Text = cliente.Endereco.Cidade;
             txtCep.Text = cliente.Endereco.CodigoCep;
-            txtUf.Text = cliente.Endereco.Uf;
+            txtUf.Text = cliente.Endereco.Uf.ToString();
             txtRg.Text = cliente.Rg;
             txtTelefone.Text = cliente.Telefone;
         }
 
         private void PreencherDadosEnderecoForm(Endereco endereco)
         {
-            txtUf.Text = endereco.Uf;
+            txtUf.Text = endereco.Uf.ToString();
             txtCidade.Text = endereco.Cidade;
             txtBairro.Text = endereco.Bairro;
             txtEndereco.Text = endereco.Rua;
@@ -65,7 +66,7 @@ namespace PimdexxSystem
 
         private void EventoClickInserir(object sender, EventArgs e)
         {
-            var endereco = new Endereco(txtEndereco.Text, txtBairro.Text, txtCidade.Text, txtCep.Text, txtUf.Text);
+            var endereco = new Endereco(txtEndereco.Text, txtBairro.Text, txtCidade.Text, txtCep.Text, (Uf)Enum.Parse(typeof(Uf), txtUf.Text, true));
             var cliente = new Cliente(txtNome.Text, txtCpf.Text, txtRg.Text, txtTelefone.Text, Convert.ToDateTime(txtDtNascimento), endereco);
             
             if (cliente.IsValid)
@@ -117,7 +118,7 @@ namespace PimdexxSystem
 
             if (!String.IsNullOrEmpty(cpf))
             {
-                var endereco = new Endereco(txtEndereco.Text, txtBairro.Text, txtCidade.Text, txtCep.Text, txtUf.Text);
+                var endereco = new Endereco(txtEndereco.Text, txtBairro.Text, txtCidade.Text, txtCep.Text, (Uf)Enum.Parse(typeof(Uf), txtUf.Text, true));
                 var cliente = new Cliente(txtNome.Text, txtCpf.Text, txtRg.Text, txtTelefone.Text, Convert.ToDateTime(txtDtNascimento), endereco);
 
                 if (cliente.IsValid)
@@ -187,7 +188,7 @@ namespace PimdexxSystem
                 try
                 {
                     var endereco = ws.consultaCEP(txtCep.Text.Trim());
-                    Endereco enderecoConsulta = new Endereco(endereco.end, endereco.bairro, endereco.cidade, txtCep.Text, endereco.uf);
+                    Endereco enderecoConsulta = new Endereco(endereco.end, endereco.bairro, endereco.cidade, txtCep.Text, (Uf)Enum.Parse(typeof(Uf), endereco.uf, true));
                     this.PreencherDadosEnderecoForm(enderecoConsulta);
                 }
                 catch (System.Exception ex)
