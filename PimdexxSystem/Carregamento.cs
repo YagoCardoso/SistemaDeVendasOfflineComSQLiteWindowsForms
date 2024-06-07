@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pdv.Application;
+using Pdv.Domain.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,12 @@ namespace PimdexxSystem
 {
     public partial class Carregamento : Form
     {
-        public Carregamento()
+        private readonly FuncionarioService _funcionarioService;
+
+        public Carregamento(FuncionarioService funcionarioService)
         {
             InitializeComponent();
+            this._funcionarioService = funcionarioService;
         }
 
         private void Carregamento_Load(object sender, EventArgs e)
@@ -31,7 +36,7 @@ namespace PimdexxSystem
             else
             {
                 timer1.Enabled = false;
-                Login log = new Login();
+                Login log = new Login(_funcionarioService);
                 log.Show();
                 this.Visible = false;
             }

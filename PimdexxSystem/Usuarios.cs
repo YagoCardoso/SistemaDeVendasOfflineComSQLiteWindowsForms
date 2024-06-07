@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Pdv.Application;
+using Pdv.Domain.Entidades;
+using Pdv.Domain.Entidades.Funcionario;
+using Pdv.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,100 +17,111 @@ namespace PimdexxSystem
 {
     public partial class Usuarios : Form
     {
-        public Usuarios()
+        private readonly FuncionarioService _funcionarioService;
+
+        public Usuarios(FuncionarioService funcionarioService)
         {
             InitializeComponent();
+            _funcionarioService = funcionarioService;
         }
 
-        private void textBox10_TextChanged(object sender, EventArgs e)
+        public void LimparCamposFuncionario()
         {
-
+            txtCpf.Text = "";
+            txtNome.Text = "";
+            txtDataNascimento.Text = "";
+            txtRua.Text = "";
+            txtBairro.Text = "";
+            txtCidade.Text = "";
+            txtUf.Text = "";
+            txtRg.Text = "";
+            txtTelefone.Text = "";
+            txtSalario.Text = "";
+            cboxTipoAcesso.Text = "";
+            txtDataAdmissao.Text = "";
+            txtDataDesligamento.Text = "";
+            txtUsuario.Text = "";
+            txtSenha.Text = "";
+            
+            txtCpf.Focus();
         }
 
         private void Funcionarios_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'systemOrangeDataSet11.USUARIO'. Você pode movê-la ou removê-la conforme necessário.
-            this.uSUARIOTableAdapter.Fill(this.systemOrangeDataSet11.USUARIO);
-
+            this.UsuarioTableAdapter.Fill(this.systemOrangeDataSet11.USUARIO);
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_SalvarNovo_Click(object sender, EventArgs e)
+        private void EventoClickSalvarFuncionario(object sender, EventArgs e)
         {
             SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
             SqlCommand command = new SqlCommand("insert into USUARIO(CPF, NOME, DTNASCIMENTO, ENDERECO, BAIRRO, CIDADE, CEP, UF, RG, FONE, SALARIO, TIPOUSU, DTADMISSAO, DTDESLIGAMENTO, USUARIO, SENHA ) values (@varCpf, @varNome, @varDTnascimento, @varEndereco, @varBairro, @varCidade, @varCep, @varUF, @varRG, @varFone, @varSalario, @varTipousu, @varDTadmissao, @varDTdesligamento, @varUsuario, @varSenha)", sql);
 
+            /*var funcionario = new Funcionario(
+                txtNome.Text,
+                txtCpf.Text,
+                txtRg.Text,
+                txtTelefone.Text,
+                Convert.ToDateTime(txtDataNascimento.Text),
+                new Endereco
+                {
+                    Rua = txtRua.Text,
+                    Bairro = txtBairro.Text,
+                    Cidade = txtCidade.Text,
+                    CodigoCep = txtCidade.Text,
+                    Uf = (Uf)Enum.Parse(typeof(Uf), txtUf.Text, true)
+                },
+                new ContaAcesso
+                {
+                    Usuario = txtUsuario.Text,
+                    Senha = txtSenha.Text
+                },
+                Convert.ToDecimal(txtSalario.Text)
+                );*/
 
-            command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = txt_CPF.Text;
-            command.Parameters.Add("@varNome", SqlDbType.NVarChar).Value = txt_NomeCompleto.Text;
-            command.Parameters.Add("@varDTnascimento", SqlDbType.DateTime).Value = txt_dtNascimento.Text;
-            command.Parameters.Add("@varEndereco", SqlDbType.NVarChar).Value = txt_Endereco.Text;
-            command.Parameters.Add("@varBairro", SqlDbType.NVarChar).Value = txt_Bairro.Text;
-            command.Parameters.Add("@varCidade", SqlDbType.NVarChar).Value = txt_Cidade.Text;
+            //command.Parameters.Add("@varCpf", SqlDbType.BigInt).Value = ;
+            command.Parameters.Add("@varNome", SqlDbType.NVarChar).Value = txtNome.Text;
+            command.Parameters.Add("@varDTnascimento", SqlDbType.DateTime).Value = txtDataNascimento.Text;
+            command.Parameters.Add("@varEndereco", SqlDbType.NVarChar).Value = txtRua.Text;
+            command.Parameters.Add("@varBairro", SqlDbType.NVarChar).Value = txtBairro.Text;
+            command.Parameters.Add("@varCidade", SqlDbType.NVarChar).Value = txtCidade.Text;
             command.Parameters.Add("@varCep", SqlDbType.NVarChar).Value = txt_CEP.Text;
-            command.Parameters.Add("@varUF", SqlDbType.NVarChar).Value = txt_UF.Text;
-            command.Parameters.Add("@varRG", SqlDbType.NVarChar).Value = txt_RG.Text;
-            command.Parameters.Add("@varFone", SqlDbType.NVarChar).Value = txt_Fone.Text;
-            command.Parameters.Add("@varSalario", SqlDbType.NVarChar).Value = txt_Salario.Text;
-            command.Parameters.Add("@varTipousu", SqlDbType.NVarChar).Value = cbox_TipoUsu.Text;
-            command.Parameters.Add("@varDTadmissao", SqlDbType.DateTime).Value = txt_dtadmissao.Text;
-            command.Parameters.Add("@varDTdesligamento", SqlDbType.DateTime).Value = txt_desligamento.Text;
-            command.Parameters.Add("@varUsuario", SqlDbType.NVarChar).Value = txt_usuario.Text;
-            command.Parameters.Add("@varSenha", SqlDbType.NVarChar).Value = txt_Senha.Text;
+            command.Parameters.Add("@varUF", SqlDbType.NVarChar).Value = txtUf.Text;
+            command.Parameters.Add("@varRG", SqlDbType.NVarChar).Value = txtRg.Text;
+            command.Parameters.Add("@varFone", SqlDbType.NVarChar).Value = txtTelefone.Text;
+            command.Parameters.Add("@varSalario", SqlDbType.NVarChar).Value = txtSalario.Text;
+            command.Parameters.Add("@varTipousu", SqlDbType.NVarChar).Value = cboxTipoAcesso.Text;
+            command.Parameters.Add("@varDTadmissao", SqlDbType.DateTime).Value = txtDataAdmissao.Text;
+            command.Parameters.Add("@varDTdesligamento", SqlDbType.DateTime).Value = txtDataDesligamento.Text;
+            command.Parameters.Add("@varUsuario", SqlDbType.NVarChar).Value = txtUsuario.Text;
+            command.Parameters.Add("@varSenha", SqlDbType.NVarChar).Value = txtSenha.Text;
 
-            if (txt_CPF.Text != "" & txt_NomeCompleto.Text != "")
+            if (txtCpf.Text != "" && txtNome.Text != "")
             {
                 try
                 {
                     sql.Open();
                     command.ExecuteNonQuery();
                     MessageBox.Show("Cadastro efetuado com sucesso!", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txt_CPF.Text = "";
-                    txt_NomeCompleto.Text = "";
-                    txt_dtNascimento.Text = "";
-                    txt_Endereco.Text = "";
-                    txt_Bairro.Text = "";
-                    txt_Cidade.Text = "";
-                    txt_UF.Text = "";
-                    txt_RG.Text = "";
-                    txt_Fone.Text = "";
-                    txt_Salario.Text = "";
-                    cbox_TipoUsu.Text = "";
-                    txt_dtadmissao.Text = "";
-                    txt_desligamento.Text = "";
-                    txt_usuario.Text = "";
-                    txt_Senha.Text = "";
-
+                    this.LimparCamposFuncionario();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                finally
-                {
-                    sql.Close();
-                }
-
             }
             else
-            {
-                MessageBox.Show("ATENÇÃO CAMPOS OBRIGATORIOS!", "ATENÇÂO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
+                MessageBox.Show("Atenção campos obrigatórios!", "ATENÇÂO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void EventoClickPesquisarFuncionario(object sender, EventArgs e)
         {
-            if (txt_CPF.Text != null && txt_CPF.Text != "")
+            if (txtCpf.Text != null && txtCpf.Text != "")
             {
                 SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
                 SqlCommand command = new SqlCommand("select * from USUARIO where CPF=@CPF", sql);
 
-                command.Parameters.Add("@CPF", SqlDbType.BigInt).Value = txt_CPF.Text;
+                command.Parameters.Add("@CPF", SqlDbType.BigInt).Value = txtCpf.Text;
 
 
                 try
@@ -118,23 +133,23 @@ namespace PimdexxSystem
                         throw new Exception("Usuário  não encontrado!");
                     }
                     drms.Read();
-                    txt_CPF.Text = Convert.ToString(drms["CPF"]);
-                    txt_NomeCompleto.Text = Convert.ToString(drms["NOME"]);
-                    txt_dtNascimento.Text = Convert.ToString(drms["DTNASCIMENTO"]);
-                    txt_Endereco.Text = Convert.ToString(drms["ENDERECO"]);
-                    txt_Bairro.Text = Convert.ToString(drms["BAIRRO"]);
-                    txt_Cidade.Text = Convert.ToString(drms["CIDADE"]);
+                    txtCpf.Text = Convert.ToString(drms["CPF"]);
+                    txtNome.Text = Convert.ToString(drms["NOME"]);
+                    txtDataNascimento.Text = Convert.ToString(drms["DTNASCIMENTO"]);
+                    txtRua.Text = Convert.ToString(drms["ENDERECO"]);
+                    txtBairro.Text = Convert.ToString(drms["BAIRRO"]);
+                    txtCidade.Text = Convert.ToString(drms["CIDADE"]);
                     txt_CEP.Text = Convert.ToString(drms["CEP"]);
-                    txt_UF.Text = Convert.ToString(drms["UF"]);
-                    txt_RG.Text = Convert.ToString(drms["RG"]);
-                    txt_Fone.Text = Convert.ToString(drms["FONE"]);
+                    txtUf.Text = Convert.ToString(drms["UF"]);
+                    txtRg.Text = Convert.ToString(drms["RG"]);
+                    txtTelefone.Text = Convert.ToString(drms["FONE"]);
 
-                    txt_Salario.Text = Convert.ToString(drms["SALARIO"]);
-                    cbox_TipoUsu.Text = Convert.ToString(drms["TIPOUSU"]);
-                    txt_dtadmissao.Text = Convert.ToString(drms["DTADMISSAO"]);
-                    txt_desligamento.Text = Convert.ToString(drms["DTDESLIGAMENTO"]);
-                    txt_usuario.Text = Convert.ToString(drms["USUARIO"]);
-                    txt_Senha.Text = Convert.ToString(drms["SENHA"]);
+                    txtSalario.Text = Convert.ToString(drms["SALARIO"]);
+                    cboxTipoAcesso.Text = Convert.ToString(drms["TIPOUSU"]);
+                    txtDataAdmissao.Text = Convert.ToString(drms["DTADMISSAO"]);
+                    txtDataDesligamento.Text = Convert.ToString(drms["DTDESLIGAMENTO"]);
+                    txtUsuario.Text = Convert.ToString(drms["USUARIO"]);
+                    txtSenha.Text = Convert.ToString(drms["SENHA"]);
 
 
                 }
@@ -150,75 +165,43 @@ namespace PimdexxSystem
             else { MessageBox.Show("ATENÇÃO DIGITE UM CPF PARA PESQUISAR!", "ATENÇÂO", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void EventoLimparClick(object sender, EventArgs e)
         {
-            txt_CPF.Text = "";
-            txt_NomeCompleto.Text = "";
-            txt_dtNascimento.Text = "";
-            txt_Endereco.Text = "";
-            txt_Bairro.Text = "";
-            txt_Cidade.Text = "";
-            txt_UF.Text = "";
-            txt_RG.Text = "";
-            txt_Fone.Text = "";
-            txt_Salario.Text = "";
-            cbox_TipoUsu.Text = "";
-            txt_dtadmissao.Text = "";
-            txt_desligamento.Text = "";
-            txt_usuario.Text = "";
-            txt_Senha.Text = "";
+            this.LimparCamposFuncionario();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void EventoClickAlterarFuncionario(object sender, EventArgs e)
         {
-            if (txt_CPF.Text != null)
+            if (txtCpf.Text != null)
             {
                 SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
                 SqlCommand command = new SqlCommand("update USUARIO  set  NOME=@NOME, DTNASCIMENTO=@DTNASCIMENTO, ENDERECO=@ENDERECO, BAIRRO=@BAIRRO, CIDADE=@CIDADE, CEP=@CEP, UF=@UF, RG=@RG, FONE=@FONE, SALARIO=@SALARIO, TIPOUSU=@TIPOUSU, DTADMISSAO=@DTADMISSAO, DTDESLIGAMENTO=@DTDESLIGAMENTO, USUARIO=@USUARIO, SENHA=@SENHA  where CPF=@CPF ", sql);
 
-
-                command.Parameters.Add("@CPF", SqlDbType.BigInt).Value = txt_CPF.Text;
-                command.Parameters.Add("@NOME", SqlDbType.NVarChar).Value = txt_NomeCompleto.Text;
-                command.Parameters.Add("@DTNASCIMENTO", SqlDbType.DateTime).Value = txt_dtNascimento.Text;
-                command.Parameters.Add("@ENDERECO", SqlDbType.NVarChar).Value = txt_Endereco.Text;
-                command.Parameters.Add("@BAIRRO", SqlDbType.NVarChar).Value = txt_Bairro.Text;
-                command.Parameters.Add("@CIDADE", SqlDbType.NVarChar).Value = txt_Cidade.Text;
+                command.Parameters.Add("@CPF", SqlDbType.BigInt).Value = txtCpf.Text;
+                command.Parameters.Add("@NOME", SqlDbType.NVarChar).Value = txtNome.Text;
+                command.Parameters.Add("@DTNASCIMENTO", SqlDbType.DateTime).Value = txtDataNascimento.Text;
+                command.Parameters.Add("@ENDERECO", SqlDbType.NVarChar).Value = txtRua.Text;
+                command.Parameters.Add("@BAIRRO", SqlDbType.NVarChar).Value = txtBairro.Text;
+                command.Parameters.Add("@CIDADE", SqlDbType.NVarChar).Value = txtCidade.Text;
                 command.Parameters.Add("@CEP", SqlDbType.NVarChar).Value = txt_CEP.Text;
-                command.Parameters.Add("@UF", SqlDbType.NVarChar).Value = txt_UF.Text;
-                command.Parameters.Add("@RG", SqlDbType.NVarChar).Value = txt_RG.Text;
-                command.Parameters.Add("@FONE", SqlDbType.NVarChar).Value = txt_Fone.Text;
-                command.Parameters.Add("@SALARIO", SqlDbType.NVarChar).Value = txt_Salario.Text;
-                command.Parameters.Add("@TIPOUSU", SqlDbType.NVarChar).Value = cbox_TipoUsu.Text;
-                command.Parameters.Add("@DTADMISSAO", SqlDbType.DateTime).Value = txt_dtadmissao.Text;
-                command.Parameters.Add("@DTDESLIGAMENTO", SqlDbType.DateTime).Value = txt_desligamento.Text;
-                command.Parameters.Add("@USUARIO", SqlDbType.NVarChar).Value = txt_usuario.Text;
-                command.Parameters.Add("@SENHA", SqlDbType.NVarChar).Value = txt_Senha.Text;
+                command.Parameters.Add("@UF", SqlDbType.NVarChar).Value = txtUf.Text;
+                command.Parameters.Add("@RG", SqlDbType.NVarChar).Value = txtRg.Text;
+                command.Parameters.Add("@FONE", SqlDbType.NVarChar).Value = txtTelefone.Text;
+                command.Parameters.Add("@SALARIO", SqlDbType.NVarChar).Value = txtSalario.Text;
+                command.Parameters.Add("@TIPOUSU", SqlDbType.NVarChar).Value = cboxTipoAcesso.Text;
+                command.Parameters.Add("@DTADMISSAO", SqlDbType.DateTime).Value = txtDataAdmissao.Text;
+                command.Parameters.Add("@DTDESLIGAMENTO", SqlDbType.DateTime).Value = txtDataDesligamento.Text;
+                command.Parameters.Add("@USUARIO", SqlDbType.NVarChar).Value = txtUsuario.Text;
+                command.Parameters.Add("@SENHA", SqlDbType.NVarChar).Value = txtSenha.Text;
 
-
-
-
-                if (txt_CPF.Text != "" & txt_NomeCompleto.Text != "")
+                if (txtCpf.Text != "" & txtNome.Text != "")
                 {
                     try
                     {
                         sql.Open();
                         command.ExecuteNonQuery();
                         MessageBox.Show("Atualização salva com Sucesso com Sucesso!", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        txt_CPF.Text = "";
-                        txt_NomeCompleto.Text = "";
-                        txt_dtNascimento.Text = "";
-                        txt_Endereco.Text = "";
-                        txt_Bairro.Text = "";
-                        txt_Cidade.Text = "";
-                        txt_UF.Text = "";
-                        txt_RG.Text = "";
-                        txt_Fone.Text = "";
-                        txt_Salario.Text = "";
-                        cbox_TipoUsu.Text = "";
-                        txt_dtadmissao.Text = "";
-                        txt_desligamento.Text = "";
-                        txt_usuario.Text = "";
-                        txt_Senha.Text = "";
+                        this.LimparCamposFuncionario();
 
                     }
                     catch (Exception ex)
@@ -229,7 +212,6 @@ namespace PimdexxSystem
                     {
                         sql.Close();
                     }
-
                 }
                 else
                 {
@@ -239,7 +221,7 @@ namespace PimdexxSystem
             else { MessageBox.Show("Primeiro pesquise por algum CPF, para alterar registros.", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void EventoClickExcluirFuncionario(object sender, EventArgs e)
         {
             string texto = "Deseja realmente Excluir?";
             string titulo = " Excluir";
@@ -248,14 +230,10 @@ namespace PimdexxSystem
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
             {
-
-
-
-
                 SqlConnection sql = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=SystemOrange;Data Source=DESKTOP-PIKVREV\\SQLEXPRESS");
                 SqlCommand command = new SqlCommand("delete from USUARIO where cpf=@cod", sql);
 
-                command.Parameters.Add("@cod", SqlDbType.BigInt).Value = txt_CPF.Text;
+                command.Parameters.Add("@cod", SqlDbType.BigInt).Value = txtCpf.Text;
 
                 try
                 {
@@ -263,21 +241,7 @@ namespace PimdexxSystem
 
                     command.ExecuteNonQuery();
                     MessageBox.Show(" Excluido com Sucesso!", "Feito", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_CPF.Text = "";
-                    txt_NomeCompleto.Text = "";
-                    txt_dtNascimento.Text = "";
-                    txt_Endereco.Text = "";
-                    txt_Bairro.Text = "";
-                    txt_Cidade.Text = "";
-                    txt_UF.Text = "";
-                    txt_RG.Text = "";
-                    txt_Fone.Text = "";
-                    txt_Salario.Text = "";
-                    cbox_TipoUsu.Text = "";
-                    txt_dtadmissao.Text = "";
-                    txt_desligamento.Text = "";
-                    txt_usuario.Text = "";
-                    txt_Senha.Text = "";
+                    this.LimparCamposFuncionario();
 
                 }
                 catch (Exception ex)
@@ -291,33 +255,14 @@ namespace PimdexxSystem
             }
         }
 
-        private void txt_CPF_Click(object sender, EventArgs e)
-        {
-            LABEL_CPF.Text = "";
-        }
-
-        private void txt_Salario_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             ConsultarUsuario ver = new ConsultarUsuario();
-
             ver.Show();
-        }
-
-        private void LABEL_CPF_Click(object sender, EventArgs e)
-        {
-            LABEL_CPF.Text = "";
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            //ConsultarCep cep = new ConsultarCep();
-            //cep.Show();
-
             if (!string.IsNullOrWhiteSpace(txt_CEP.Text))
             {
                 using (var ws = new WSCorreios.AtendeClienteClient())
@@ -325,10 +270,10 @@ namespace PimdexxSystem
                     try
                     {
                         var endereco = ws.consultaCEP(txt_CEP.Text.Trim());
-                        txt_UF.Text = endereco.uf;
-                        txt_Cidade.Text = endereco.cidade;
-                        txt_Bairro.Text = endereco.bairro;
-                        txt_Endereco.Text = endereco.end;
+                        txtUf.Text = endereco.uf;
+                        txtCidade.Text = endereco.cidade;
+                        txtBairro.Text = endereco.bairro;
+                        txtRua.Text = endereco.end;
 
                     }
                     catch (Exception ex)

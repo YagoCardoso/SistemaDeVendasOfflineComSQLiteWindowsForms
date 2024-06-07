@@ -449,7 +449,7 @@
             this.pctboxCep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctboxCep.TabIndex = 217;
             this.pctboxCep.TabStop = false;
-            this.pctboxCep.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pctboxCep.Click += new System.EventHandler(this.EventoPctCep);
             // 
             // Clientes
             // 

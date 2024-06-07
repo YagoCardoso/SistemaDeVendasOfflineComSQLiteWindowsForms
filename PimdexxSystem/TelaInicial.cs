@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Pdv.Application;
 
 
 namespace PimdexxSystem
 {
     public partial class Principal : Form
     {
-        public Principal()
+        private readonly FuncionarioService _funcionarioService;
+
+        public Principal(FuncionarioService funcionarioService)
         {
             InitializeComponent();
+            this._funcionarioService = funcionarioService;
         }
-        
 
         private void Fechar_Click(object sender, EventArgs e)
         {
@@ -128,7 +131,7 @@ namespace PimdexxSystem
 
         private void btnEntrada_Click(object sender, EventArgs e)
         {
-            AbrirFormInPanel(new Usuarios());
+            AbrirFormInPanel(new Usuarios(_funcionarioService));
         }
 
         private void btnSaida_Click(object sender, EventArgs e)

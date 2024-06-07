@@ -14,6 +14,15 @@ namespace Pdv.Application
             _clienteRepository = clienteRepository;
         }
 
+        public void AlterarCliente(Cliente cliente)
+        {
+            _clienteRepository.AlterarCliente(cliente);
+        }
+
+        public void DeletarCliente(string cpf)
+        {
+            _clienteRepository.DeleteCliente(cpf);
+        }
 
         public void InserirCliente(Cliente cliente)
         {

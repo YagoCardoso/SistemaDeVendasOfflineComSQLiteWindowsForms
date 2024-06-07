@@ -17,20 +17,19 @@ namespace PimdexxSystem
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void EventoConsultarCepClick(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtCEP.Text))
+            if (!string.IsNullOrWhiteSpace(txtCep.Text))
             {
                 using (var ws = new WSCorreios.AtendeClienteClient())
 
                 try
                 {
-                        var endereco = ws.consultaCEP(txtCEP.Text.Trim());
+                        var endereco = ws.consultaCEP(txtCep.Text.Trim());
                         TxtEstado.Text = endereco.uf;
                         TxtCidade.Text = endereco.cidade;
                         TxtBairro.Text = endereco.bairro;
                         txtRua.Text = endereco.end;
-
                 }
                 catch(Exception ex)
                 {
@@ -39,21 +38,20 @@ namespace PimdexxSystem
             }
             else
             {
-                MessageBox.Show("Informe um CEP VAlido.", this.Text, MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Informe um CEP válido.", this.Text, MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
+        private void EventoLimparClick(object sender, EventArgs e)
         {
-            txtCEP.Text = "";
-            TxtEstado.Text = "";
-            TxtCidade.Text = "";
-            TxtBairro.Text = "";
-            txtRua.Text = "";
-
+            txtCep.Text = String.Empty;
+            TxtEstado.Text = String.Empty;
+            TxtCidade.Text = String.Empty;
+            TxtBairro.Text = String.Empty;
+            txtRua.Text = String.Empty;
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void EventoSairClick(object sender, EventArgs e)
         {
             this.Close();
         }

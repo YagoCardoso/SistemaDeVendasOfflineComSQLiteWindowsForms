@@ -10,19 +10,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
+using Pdv.Application;
 
 namespace PimdexxSystem
 {
     
     public partial class Login : Form
     {
-
-
         private Thread nt;
 
-        public Login()
+        private readonly FuncionarioService _funcionarioService;
+
+        public Login(FuncionarioService funcionarioService)
         {
             InitializeComponent();
+            this._funcionarioService = funcionarioService;
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace PimdexxSystem
 
         private void novoForm()
         {
-            Application.Run(new Principal());
+            Application.Run(new Principal(_funcionarioService));
         }
 
         private void btnFechar_Click_1(object sender, EventArgs e)

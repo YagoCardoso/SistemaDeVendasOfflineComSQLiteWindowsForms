@@ -1,25 +1,19 @@
 ﻿using System;
-using Flunt.Notifications;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Pdv.Domain.Entidades
 {
-    public class Cliente : Notifiable<Notification>
+    public class Cliente : Pessoa
     {
-        public string Nome { get; set; }
-        public string Cpf { get; set; }
-        public string Rg { get; set; }
-        public string Telefone { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public Endereco Endereco { get; set; }
-        
         public Cliente(
-                string nome,
-                string cpf,
-                string rg,
-                string telefone,
-                DateTime dataNascimento,
-                Endereco endereco
-        )
+            string nome, 
+            string cpf, 
+            string rg, 
+            string telefone, 
+            DateTime dataNascimento, 
+            Endereco endereco) 
+        : base(nome, cpf, rg, telefone, dataNascimento, endereco)
         {
             if (String.IsNullOrEmpty(nome))
                 AddNotification("Cliente inválido", "É necessário informar o nome.");
